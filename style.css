@@ -11,23 +11,25 @@
    ==================================================================== */
 
 :root {
-    /* Theme Colors */
-    --bg-navy-dark: #070d1f;
-    --bg-navy-card: #0f172a;
-    --bg-navy-light: #1e293b;
-    --text-white: #ffffff;
-    --text-muted: #94a3b8;
-    --blue-light: #38bdf8;
-    --blue-mid: #0284c7;
-    --blue-deep: #1d4ed8;
-    --gradient-primary: linear-gradient(135deg, #38bdf8 0%, #0284c7 50%, #1d4ed8 100%);
-    --gradient-glow: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(7, 13, 31, 0) 70%);
+    /* Backgrounds: Warm Creamy White */
+    --bg-color: #fcfbf7;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f5f3ec;
+    --border-color: rgba(0, 0, 0, 0.08);
 
-    /* Fonts & Structure */
-    --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --border-glass: 1px solid rgba(56, 189, 248, 0.15);
-    --shadow-glow: 0 10px 30px -10px rgba(56, 189, 248, 0.3);
+    /* Text Colors for Light Theme */
+    --text-primary: #1a1a1a;
+    --text-secondary: #555555;
+    --text-muted: #777777;
+
+    /* Theme Accents: Crimson Red & Royal Blue */
+    --primary-blue: #1e40af;       /* Deep Royal Blue */
+    --primary-red: #dc2626;        /* Bold Crimson Red */
+    --accent-red-hover: #b91c1c;
+
+    /* Primary CTA Gradient (Blue to Red) */
+    --btn-gradient: linear-gradient(135deg, #1e40af 0%, #dc2626 100%);
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
 /* Reset & Base Styles */
@@ -994,4 +996,1154 @@ body {
     background-color: #38bdf8; /* Light blue accent on hover */
     color: #0f172a !important; /* Dark text on hover */
     transform: translateY(-3px);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.brand-name {
+    font-size: 32px;
+    font-weight: 750;
+    color: #ffffff;
+}
+
+.brand-name span {
+    color: #65b9f5;
+}
+
+.brand-tagline {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    position: relative;
+    left: 70px;
+    background: linear-gradient(90deg, #69b9f5, #5578d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.brand-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+/* Parent Container */
+.nav-item.dropdown {
+    position: relative;
+    list-style: none;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.dropdown-icon {
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+/* Mega Menu Container Card */
+.mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 520px;
+    background-color: #0d1117; /* Dark theme background */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin-top: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    
+    /* Animation & Hidden States */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1000;
+}
+
+/* Header Text */
+.mega-menu-header {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #94a3b8;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+/* 2-Column Grid Layout */
+.mega-menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+/* Individual Grid Card Item */
+.mega-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid transparent;
+    transition: all 0.25s ease;
+}
+
+/* Icon Box Container */
+.mega-item .icon-box {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64b5f6; /* Matching accent blue */
+    font-size: 1.1rem;
+    transition: all 0.25s ease;
+}
+
+/* Text Container */
+.mega-item .item-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.mega-item .item-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ffffff;
+    transition: color 0.25s ease;
+}
+
+.mega-item .item-desc {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+
+/* Hover States matching your theme */
+.mega-item:hover {
+    background-color: rgba(100, 181, 246, 0.08);
+    border-color: rgba(100, 181, 246, 0.2);
+    transform: translateY(-2px);
+}
+
+.mega-item:hover .icon-box {
+    background-color: #64b5f6;
+    color: #0d1117;
+    border-color: #64b5f6;
+}
+
+.mega-item:hover .item-title {
+    color: #64b5f6;
+}
+
+/* Show Menu on Hover */
+.nav-item.dropdown:hover .mega-menu,
+.nav-item.dropdown.active .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-item.dropdown:hover .dropdown-icon,
+.nav-item.dropdown.active .dropdown-icon {
+    transform: rotate(180deg);
+}/* Two-Panel Mega Menu Container */
+/* Centered Two-Panel Mega Menu Container */
+.services-mega-menu {
+    width: 760px !important;
+    display: flex !important;
+    padding: 0 !important;
+    overflow: hidden;
+    
+    /* Centers the menu right under the Services button */
+    left: 50% !important;
+    transform: translateX(-50%) translateY(12px) !important;
+}
+
+/* Hover state to keep it centered when open */
+.nav-item.dropdown:hover .services-mega-menu,
+.nav-item.dropdown.active .services-mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0) !important;
+}
+
+/* Left Panel */
+.services-left-panel {
+    width: 50%;
+    padding: 20px;
+    background-color: #0d1117;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Category item inside left panel */
+.service-cat-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.service-cat-item .icon-box {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64b5f6;
+    font-size: 0.95rem;
+}
+
+.service-cat-item .item-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.service-cat-item .item-title {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.service-cat-item .item-desc {
+    font-size: 0.72rem;
+    color: #94a3b8;
+}
+
+.service-cat-item .arrow-icon {
+    font-size: 0.7rem;
+    color: #64b5f6;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+/* Hover or Active state for Left Panel Items */
+.service-cat-item:hover, 
+.service-cat-item.active {
+    background-color: rgba(100, 181, 246, 0.08);
+    border-color: rgba(100, 181, 246, 0.15);
+}
+
+.service-cat-item:hover .arrow-icon,
+.service-cat-item.active .arrow-icon {
+    opacity: 1;
+}
+
+.service-cat-item.active .icon-box {
+    background-color: #64b5f6;
+    color: #0d1117;
+}
+
+/* Right Panel */
+.services-right-panel {
+    width: 50%;
+    padding: 24px;
+    background-color: #090d12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Sub-panel switching logic */
+.sub-panel {
+    display: none;
+}
+
+.sub-panel.active {
+    display: block;
+}
+
+/* Sub-links styling */
+.sub-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.sub-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    color: #cbd5e1;
+    font-size: 0.88rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.02);
+    transition: all 0.2s ease;
+}
+
+.sub-link i {
+    font-size: 0.75rem;
+    color: #64b5f6;
+}
+
+.sub-link:hover {
+    background-color: rgba(100, 181, 246, 0.1);
+    color: #64b5f6;
+    padding-left: 18px;
+}
+/* Wide Contact Mega Menu Container */
+.contact-mega-menu {
+    width: 820px !important;
+    display: flex !important;
+    padding: 0 !important;
+    overflow: hidden;
+    left: auto !important;
+    right: 0 !important;
+    transform: translateY(12px) !important;
+}
+
+/* Hover state alignment */
+.nav-item.dropdown:hover .contact-mega-menu,
+.nav-item.dropdown.active .contact-mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) !important;
+}
+
+/* Left Info Panel */
+.contact-info-panel {
+    width: 45%;
+    padding: 28px;
+    background-color: #0d1117;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-info-panel .badge-tag {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: #64b5f6;
+    background-color: rgba(100, 181, 246, 0.1);
+    padding: 4px 10px;
+    border-radius: 20px;
+    width: fit-content;
+    letter-spacing: 1px;
+}
+
+.contact-info-panel h3 {
+    font-size: 1.25rem;
+    color: #ffffff;
+    line-height: 1.3;
+}
+
+.contact-info-panel h3 .highlight {
+    color: #64b5f6;
+}
+
+.contact-info-panel p {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    line-height: 1.4;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.contact-method-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Make email and whatsapp links clickable */
+a.contact-method-item {
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+a.contact-method-item:hover {
+    transform: translateX(4px);
+}
+
+a.contact-method-item:hover .method-title {
+    color: #64b5f6;
+}
+
+.contact-method-item .icon-box {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64b5f6;
+    font-size: 0.85rem;
+}
+
+.contact-method-item .method-title {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.contact-method-item .method-desc {
+    display: block;
+    font-size: 0.72rem;
+    color: #94a3b8;
+}
+
+/* Right Form Panel */
+.contact-form-panel {
+    width: 55%;
+    padding: 28px;
+    background-color: #090d12;
+}
+
+.contact-form-panel form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form-panel .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-form-panel label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+.contact-form-panel input,
+.contact-form-panel select,
+.contact-form-panel textarea {
+    width: 100%;
+    padding: 9px 12px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 0.82rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.contact-form-panel select option {
+    background-color: #0d1117;
+    color: #ffffff;
+}
+
+.contact-form-panel input:focus,
+.contact-form-panel select:focus,
+.contact-form-panel textarea:focus {
+    border-color: #64b5f6;
+}
+
+.contact-form-panel input::placeholder,
+.contact-form-panel textarea::placeholder {
+    color: #475569;
+}
+
+.contact-form-panel .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #64b5f6 0%, #3b82f6 100%);
+    color: #0d1117;
+    font-weight: 600;
+    font-size: 0.88rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    margin-top: 4px;
+}
+
+.contact-form-panel .submit-btn:hover {
+    opacity: 0.9;
+}
+
+/* Success Message Box Styling */
+.success-message-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 12px;
+}
+
+.success-message-box i {
+    font-size: 3rem;
+    color: #4ade80;
+}
+
+.success-message-box h4 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.success-message-box p {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    line-height: 1.4;
+}
+/* Standalone Enquiry Page Layout */
+.enquiry-standalone-page {
+    min-height: 100vh;
+    padding-top: 120px; /* Gives room for the fixed navbar */
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #080b0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enquiry-hero-container {
+    max-width: 1180px;
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.enquiry-brand-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.enquiry-brand-panel .badge-tag {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #64b5f6;
+    background-color: rgba(100, 181, 246, 0.1);
+    padding: 6px 14px;
+    border-radius: 20px;
+    width: fit-content;
+    letter-spacing: 1px;
+}
+
+.enquiry-brand-panel h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.enquiry-brand-panel h1 .highlight {
+    color: #64b5f6;
+}
+
+.brand-statement {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    font-style: italic;
+    line-height: 1.6;
+    border-left: 3px solid #64b5f6;
+    padding-left: 18px;
+    margin: 8px 0;
+}
+
+.brand-values {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.value-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.value-item .icon-box {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64b5f6;
+    font-size: 1rem;
+}
+
+.value-item h4 {
+    font-size: 0.95rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.value-item p {
+    font-size: 0.82rem;
+    color: #94a3b8;
+    margin-top: 2px;
+    line-height: 1.4;
+}
+
+.enquiry-form-card {
+    flex: 1;
+    background-color: #0d1117;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 36px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.enquiry-form-card h3 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.form-sub {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-top: 4px;
+    margin-bottom: 22px;
+}
+
+#standaloneEnquiryForm {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.enquiry-form-card .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.enquiry-form-card label {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+.enquiry-form-card input,
+.enquiry-form-card select,
+.enquiry-form-card textarea {
+    width: 100%;
+    padding: 10px 14px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 0.88rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.enquiry-form-card select option {
+    background-color: #0d1117;
+    color: #ffffff;
+}
+
+.enquiry-form-card input:focus,
+.enquiry-form-card select:focus,
+.enquiry-form-card textarea:focus {
+    border-color: #64b5f6;
+}
+
+.submit-enquiry-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #64b5f6 0%, #3b82f6 100%);
+    color: #0d1117;
+    font-weight: 600;
+    font-size: 0.92rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    margin-top: 4px;
+}
+
+.submit-enquiry-btn:hover {
+    opacity: 0.9;
+}
+
+.enquiry-success-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 10px;
+    gap: 14px;
+}
+
+.enquiry-success-state i {
+    font-size: 3.5rem;
+    color: #4ade80;
+}
+
+.enquiry-success-state h4 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.enquiry-success-state p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+.reset-form-btn {
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .enquiry-hero-container {
+        flex-direction: column;
+    }
+}
+/* Base Body Styling */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Header & Navigation Bar */
+.navbar-header, .header {
+    background-color: rgba(252, 251, 247, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-link {
+    color: var(--text-primary) !important;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-red) !important;
+}
+
+/* Red & Blue Buttons */
+.btn-primary, .submit-btn, .submit-enquiry-btn {
+    background: var(--btn-gradient) !important;
+    color: #ffffff !important;
+    border: none;
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.25);
+}
+
+.btn-primary:hover {
+    opacity: 0.92;
+}
+
+/* Accent Text & Badges */
+.gradient-text, .highlight {
+    background: linear-gradient(135deg, #1e40af, #dc2626);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-badge, .badge-tag {
+    color: var(--primary-red) !important;
+    background-color: rgba(220, 38, 38, 0.08) !important;
+    border: 1px solid rgba(220, 38, 38, 0.15);
+}
+
+/* Cards (Services, Contact, Enquiry Forms) */
+.service-card, .contact-card-wrapper, .enquiry-form-card, .about-card {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: var(--shadow-soft) !important;
+    color: var(--text-primary) !important;
+}
+
+.form-group label {
+    color: var(--text-secondary) !important;
+}
+
+input, select, textarea {
+    background-color: #faf9f5 !important;
+    border: 1px solid #e2dfd5 !important;
+    color: var(--text-primary) !important;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--primary-blue) !important;
+}
+
+/* Icons */
+.info-icon, .icon-box, .service-icon {
+    background: rgba(30, 64, 175, 0.08) !important;
+    color: var(--primary-blue) !important;
+}
+
+
+/* =====================================================================
+   MANJUTECH — CREAM / BLUE / RED THEME
+   Theme-only overrides. Original layout, spacing, sizing and interactions
+   are intentionally preserved.
+   ===================================================================== */
+
+:root {
+    --bg-color: #FAF8F3;
+    --bg-card: #FFFFFF;
+    --bg-card-hover: #F3F0E8;
+    --border-color: #E7E1D6;
+
+    --text-primary: #202B38;
+    --text-secondary: #526171;
+    --text-muted: #687789;
+    --text-white: #202B38;
+
+    --primary-blue: #174A78;
+    --blue-light: #287CB8;
+    --primary-red: #C83D45;
+    --accent-red-hover: #A92F38;
+
+    --gradient-primary: linear-gradient(135deg, #174A78 0%, #287CB8 100%);
+    --gradient-primary-reverse: linear-gradient(135deg, #174A78 0%, #C83D45 100%);
+    --gradient-glow: radial-gradient(circle, rgba(40,124,184,.13) 0%, rgba(250,248,243,0) 70%);
+    --btn-gradient: linear-gradient(135deg, #174A78 0%, #287CB8 100%);
+
+    --bg-navy-dark: #FAF8F3;
+    --bg-navy-card: #FFFFFF;
+    --bg-navy-light: #F3F0E8;
+    --border-glass: 1px solid #E7E1D6;
+    --shadow-soft: 0 10px 30px rgba(29, 48, 67, .07);
+    --shadow-glow: 0 10px 28px rgba(23, 74, 120, .13);
+}
+
+/* Page and section foundations */
+html, body {
+    background: var(--bg-color);
+    color: var(--text-primary);
+}
+body { color: var(--text-primary); }
+section { color: var(--text-primary); }
+
+/* Header and navigation */
+.navbar-header, .header {
+    background: rgba(250, 248, 243, .96);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 18px rgba(29, 48, 67, .035);
+}
+.navbar-header.scrolled {
+    background: rgba(250, 248, 243, .97);
+    border-bottom: 1px solid var(--border-color);
+}
+.brand-name, .dropdown-toggle, .mobile-toggle {
+    color: var(--text-primary) !important;
+}
+.brand-name span { color: var(--primary-blue) !important; }
+.brand-tagline {
+    background: linear-gradient(90deg, var(--primary-blue), var(--primary-red));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.nav-link, .dropdown-toggle { color: var(--text-primary) !important; }
+.nav-link:hover, .nav-link.active,
+.dropdown-toggle:hover { color: var(--primary-red) !important; }
+.mobile-toggle { color: var(--primary-blue) !important; }
+
+/* Typography, highlights and labels */
+h1, h2, h3, h4, h5, h6,
+.hero-title, .section-title, .about-details h3,
+.service-card h3, .step-card h3, .contact-info h2 {
+    color: var(--text-primary);
+}
+p, .hero-subtitle, .section-subtitle, .about-details p,
+.service-card p, .service-list li, .step-card p,
+.stat-label, .exp-text, .form-sub {
+    color: var(--text-secondary);
+}
+.gradient-text, .highlight {
+    background: linear-gradient(110deg, var(--primary-blue) 0%, #287CB8 65%, var(--primary-red) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section-badge, .badge-tag, .badge-pill {
+    color: var(--primary-blue) !important;
+    background: rgba(40, 124, 184, .08) !important;
+    border: 1px solid rgba(40, 124, 184, .20) !important;
+}
+.section-badge { border-color: rgba(40,124,184,.22) !important; }
+.status-dot { background: #269B69; box-shadow: 0 0 8px rgba(38,155,105,.25); }
+
+/* Buttons and interactive accents */
+.btn-primary, .submit-btn, .submit-enquiry-btn,
+.contact-form-panel .submit-btn {
+    background: var(--btn-gradient) !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 6px 18px rgba(23, 74, 120, .18);
+}
+.btn-primary:hover, .submit-enquiry-btn:hover,
+.contact-form-panel .submit-btn:hover {
+    filter: brightness(.94);
+}
+.btn-secondary {
+    background: #FFFFFF;
+    color: var(--primary-blue) !important;
+    border: 1px solid #C9D7E3;
+}
+.btn-secondary:hover {
+    background: #EEF5FA;
+    border-color: var(--primary-blue);
+}
+.btn-light { background: #FFFFFF; color: var(--primary-blue); }
+.btn-light:hover { background: #EAF2F8; color: var(--primary-blue); }
+
+/* Cards, panels and content surfaces */
+.code-card-glass, .about-experience-card, .feature-card,
+.service-card, .portfolio-card, .step-card,
+.contact-card-wrapper, .enquiry-form-card, .modal-content,
+.about-card {
+    background: #FFFFFF !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: var(--shadow-soft);
+}
+.code-card-header {
+    background: #F3F5F7;
+    border-bottom: 1px solid var(--border-color);
+}
+.code-title { color: var(--text-secondary); }
+.code-body { color: #34465A; }
+.token-keyword { color: #C83D45; }
+.token-class { color: #174A78; }
+.token-method { color: #287CB8; }
+.token-property { color: #247A60; }
+.token-string { color: #A66A16; }
+
+.service-card:hover {
+    border-color: rgba(23, 74, 120, .45) !important;
+    box-shadow: 0 14px 34px rgba(23, 74, 120, .11);
+}
+.service-icon {
+    background: var(--gradient-primary) !important;
+    color: #FFFFFF !important;
+}
+.feature-icon, .info-icon, .icon-box, .value-item .icon-box {
+    background: rgba(40, 124, 184, .09) !important;
+    border: 1px solid rgba(40, 124, 184, .16) !important;
+    color: var(--primary-blue) !important;
+}
+.service-list li i, .category-tag, .stat-number, .exp-number {
+    color: var(--primary-blue) !important;
+}
+.step-number { color: rgba(23, 74, 120, .18); }
+
+/* Portfolio */
+.portfolio-overlay {
+    background: rgba(23, 45, 66, .91);
+}
+.portfolio-overlay h3 { color: #FFFFFF; }
+.portfolio-overlay p { color: #E3EAF0; }
+.category-tag { color: #A9D5F2 !important; }
+.filter-btn {
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    background: #FFFFFF;
+}
+.filter-btn:hover, .filter-btn.active {
+    background: var(--primary-blue);
+    color: #FFFFFF;
+    border-color: var(--primary-blue);
+}
+
+/* Forms */
+.form-group label, .contact-form-panel label,
+.enquiry-form-card label { color: var(--text-secondary) !important; }
+.form-group input, .form-group select, .form-group textarea,
+.contact-form-panel input, .contact-form-panel select,
+.contact-form-panel textarea,
+.enquiry-form-card input, .enquiry-form-card select,
+.enquiry-form-card textarea,
+input, select, textarea {
+    background: #FFFFFF !important;
+    color: var(--text-primary) !important;
+    border: 1px solid #D9D5CC !important;
+}
+input::placeholder, textarea::placeholder,
+.contact-form-panel input::placeholder,
+.contact-form-panel textarea::placeholder {
+    color: #8994A0 !important;
+}
+.form-group input:focus, .form-group select:focus,
+.form-group textarea:focus, input:focus, select:focus,
+textarea:focus, .contact-form-panel input:focus,
+.contact-form-panel select:focus, .contact-form-panel textarea:focus,
+.enquiry-form-card input:focus, .enquiry-form-card select:focus,
+.enquiry-form-card textarea:focus {
+    border-color: var(--primary-blue) !important;
+    box-shadow: 0 0 0 3px rgba(40,124,184,.10);
+}
+select option, .contact-form-panel select option,
+.enquiry-form-card select option {
+    background: #FFFFFF;
+    color: var(--text-primary);
+}
+
+/* Mega menus — preserve their existing dimensions and animations */
+.mega-menu, .services-left-panel, .contact-info-panel {
+    background: #FFFFFF !important;
+    border-color: var(--border-color) !important;
+    box-shadow: 0 18px 42px rgba(29,48,67,.13);
+}
+.services-right-panel, .contact-form-panel {
+    background: #F7F5EF !important;
+}
+.mega-menu-header { color: var(--primary-blue); }
+.mega-item, .service-cat-item,
+.sub-link {
+    background: #F8F7F3;
+    border-color: #E9E4DA;
+}
+.mega-item .icon-box, .service-cat-item .icon-box,
+.contact-method-item .icon-box {
+    background: #EEF4F8;
+    border-color: #DCE7EF;
+    color: var(--primary-blue);
+}
+.mega-item .item-title, .service-cat-item .item-title,
+.contact-method-item .method-title { color: var(--text-primary); }
+.mega-item .item-desc, .service-cat-item .item-desc,
+.contact-method-item .method-desc,
+.contact-info-panel p { color: var(--text-secondary); }
+.mega-item:hover, .service-cat-item:hover,
+.service-cat-item.active {
+    background: #EDF4F9;
+    border-color: rgba(23,74,120,.22);
+}
+.mega-item:hover .icon-box, .service-cat-item.active .icon-box {
+    background: var(--primary-blue);
+    color: #FFFFFF;
+}
+.mega-item:hover .item-title, .sub-link:hover,
+a.contact-method-item:hover .method-title {
+    color: var(--primary-red);
+}
+.sub-link { color: var(--text-secondary); }
+.sub-link i, .service-cat-item .arrow-icon { color: var(--primary-blue); }
+.contact-info-panel h3 { color: var(--text-primary); }
+.contact-info-panel h3 .highlight { color: var(--primary-red); }
+.contact-info-panel .badge-tag {
+    color: var(--primary-blue);
+    background: #EAF2F8;
+}
+.contact-form-panel label { color: var(--text-secondary) !important; }
+
+/* Enquiry page and success states */
+.enquiry-standalone-page {
+    background: var(--bg-color) !important;
+}
+.enquiry-brand-panel h1, .enquiry-form-card h3,
+.enquiry-success-state h4 { color: var(--text-primary) !important; }
+.enquiry-brand-panel h1 .highlight { color: var(--primary-blue); }
+.brand-statement {
+    color: var(--text-secondary);
+    border-left-color: var(--primary-red);
+}
+.value-item h4 { color: var(--text-primary); }
+.value-item p, .enquiry-success-state p { color: var(--text-secondary); }
+.enquiry-form-card {
+    background: #FFFFFF !important;
+    border-color: var(--border-color) !important;
+    box-shadow: var(--shadow-soft) !important;
+}
+.reset-form-btn {
+    background: #F1F3F5;
+    color: var(--primary-blue);
+    border-color: #D8E0E7;
+}
+.success-message-box h4 { color: var(--text-primary); }
+.success-message-box p { color: var(--text-secondary); }
+
+/* Footer and social links */
+.footer {
+    background: #EDEAE2 !important;
+    border-top: 1px solid var(--border-color);
+}
+.footer-brand p, .footer-links a, .footer-bottom {
+    color: var(--text-secondary);
+}
+.footer-links a:hover { color: var(--primary-red); }
+.footer-links h4, .footer-social h4 { color: var(--text-primary); }
+.social-icons a, .social-links a {
+    background: #FFFFFF;
+    border: 1px solid #DCD7CD;
+    color: var(--primary-blue) !important;
+}
+.social-icons a:hover, .social-links a:hover {
+    background: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: #FFFFFF !important;
+}
+
+/* Utility overlays and links */
+.whatsapp-link, .email-link { color: var(--primary-blue) !important; }
+.whatsapp-link:hover, .email-link:hover { color: var(--primary-red) !important; }
+.modal { background: rgba(24, 34, 45, .58); }
+.close-modal { color: var(--text-secondary); }
+.close-modal:hover { color: var(--primary-red); }
+.toast {
+    background: var(--primary-blue);
+    color: #FFFFFF;
+    box-shadow: 0 10px 28px rgba(23,74,120,.2);
 }

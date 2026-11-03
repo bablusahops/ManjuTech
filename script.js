@@ -167,3 +167,113 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 4000);
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const categoryItems = document.querySelectorAll('.service-cat-item');
+    const subPanels = document.querySelectorAll('.sub-panel');
+
+    categoryItems.forEach(item => {
+        item.addEventListener('mouseenter', function () {
+            // Remove active state from all items
+            categoryItems.forEach(i => i.classList.remove('active'));
+            this.classList.add('active');
+
+            // Hide all sub-panels
+            subPanels.forEach(panel => panel.classList.remove('active'));
+
+            // Show corresponding right sub-panel
+            const targetId = this.getAttribute('data-target');
+            const targetPanel = document.getElementById(targetId);
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+        });
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('navContactForm');
+    const successBox = document.getElementById('formSuccessMessage');
+
+    if (form) {
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const submitBtn = document.getElementById('navSubmitBtn');
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Hide form and display success message
+                    form.style.display = 'none';
+                    successBox.style.display = 'flex';
+                } else {
+                    alert('Oops! There was a problem submitting your form.');
+                    submitBtn.textContent = 'Send Message';
+                    submitBtn.disabled = false;
+                }
+            } catch (error) {
+                alert('Oops! Network error occurred.');
+                submitBtn.textContent = 'Send Message';
+                submitBtn.disabled = false;
+            }
+        });
+    }
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const standaloneForm = document.getElementById('standaloneEnquiryForm');
+    const standaloneSuccess = document.getElementById('standaloneSuccessBox');
+    const standaloneReset = document.getElementById('standaloneResetBtn');
+
+    if (standaloneForm) {
+        standaloneForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const submitBtn = document.getElementById('standaloneSubmitBtn');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(standaloneForm);
+
+            try {
+                const response = await fetch(standaloneForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    standaloneForm.style.display = 'none';
+                    standaloneSuccess.style.display = 'flex';
+                } else {
+                    alert('Problem sending message. Please try again.');
+                    submitBtn.innerHTML = originalBtnText;
+                    submitBtn.disabled = false;
+                }
+            } catch (error) {
+                alert('Network error occurred.');
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+            }
+        });
+    }
+
+    if (standaloneReset) {
+        standaloneReset.addEventListener('click', function () {
+            standaloneForm.reset();
+            standaloneForm.style.display = 'flex';
+            standaloneSuccess.style.display = 'none';
+            const submitBtn = document.getElementById('standaloneSubmitBtn');
+            submitBtn.innerHTML = 'Submit Enquiry <i class="fa-solid fa-paper-plane"></i>';
+            submitBtn.disabled = false;
+        });
+    }
+});
