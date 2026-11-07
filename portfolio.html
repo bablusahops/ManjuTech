@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | ManjuTech Digital Studio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar-header" id="navbar">
+        <div class="container nav-container">
+           <a href="index.html#home" class="logo">
+    <img src="images/logo.png" alt="ManjuTech Logo" class="brand-logo">
+    <span class="brand-text">
+        <span class="brand-name">Manju<span>Tech</span></span>
+        <span class="brand-tagline">Digital Studio</span>
+    </span>
+</a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                   <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle">
+        Company <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+    </a>
+    
+    <!-- Mega Menu Popup Box -->
+    <div class="mega-menu">
+        <div class="mega-menu-header">COMPANY</div>
+        <div class="mega-menu-grid">
+            
+            <a href="about.html" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">About Us</span>
+                    <span class="item-desc">Who We Are</span>
+                </div>
+            </a>
+
+            <a href="team.html" class="mega-item">
+    <div class="icon-box"><i class="fa-solid fa-user-group"></i></div>
+    <div class="item-text">
+        <span class="item-title">Our Team</span>
+        <span class="item-desc">Designers. Thinkers. Makers.</span>
+    </div>
+</a>
+
+            <a href="technology.html#technology-title" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">Technology Stacks</span>
+                    <span class="item-desc">Tools We Use</span>
+                </div>
+            </a>
+
+            <a href="testimonial.html#testimonials-title" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-comment-dots"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">Testimonials</span>
+                    <span class="item-desc">Client Feedback</span>
+                </div>
+            </a>
+
+            <a href="career.html" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">Careers</span>
+                    <span class="item-desc">Join Our Team</span>
+                </div>
+            </a>
+
+            <a href="faq.html" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-circle-question"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">FAQs</span>
+                    <span class="item-desc">Answers Simplified</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</li>
+                   <li class="nav-item dropdown services-dropdown">
+    <a href="enquiry.html" class="nav-link dropdown-toggle">
+        Services <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+    </a>
+    
+    <!-- 2-Panel Mega Menu Container -->
+    <div class="mega-menu services-mega-menu">
+        
+        <!-- Left Panel: Main Categories -->
+        <div class="services-left-panel">
+            <div class="mega-menu-header">SERVICES</div>
+            
+            <div class="service-cat-item active" data-target="panel-web">
+                <div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="item-text">
+                    <span class="item-title">Web Development</span>
+                    <span class="item-desc">Scalable & High Performance</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-uiux">
+                <div class="icon-box"><i class="fa-solid fa-pen-nib"></i></div>
+                <div class="item-text">
+                    <span class="item-title">Web Design and UI/UX</span>
+                    <span class="item-desc">Conversion optimized websites</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-software">
+                <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+                <div class="item-text">
+                    <span class="item-title">Software Development</span>
+                    <span class="item-desc">Custom Application for business</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-marketing">
+                <div class="icon-box"><i class="fa-solid fa-bullhorn"></i></div>
+                <div class="item-text">
+                    <span class="item-title">SEO and Digital Marketing</span>
+                    <span class="item-desc">Traffic-driven market solution</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-ai">
+                <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+                <div class="item-text">
+                    <span class="item-title">AI Integration & Systems</span>
+                    <span class="item-desc">Smart Automation and AI Tools</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+        </div>
+
+        <!-- Right Panel: Sub-services -->
+        <div class="services-right-panel">
+            
+            <!-- Web Development Sub-links -->
+            <div id="panel-web" class="sub-panel active">
+                <div class="mega-menu-header">WEB DEVELOPMENT</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=fullstack" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Full-Stack Web Development</a>
+                    <a href="enquiry.html?service=wordpress" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> WordPress Web Development</a>
+                    <a href="enquiry.html?service=ecommerce" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Custom E-commerce Development</a>
+                    <a href="enquiry.html?service=woocommerce" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> WooCommerce Development</a>
+                    <a href="enquiry.html?service=api" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> API Development & Integration</a>
+                    <a href="enquiry.html?service=legacy" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Legacy System Modernization</a>
+                </div>
+            </div>
+
+            <!-- UI/UX Sub-links -->
+            <div id="panel-uiux" class="sub-panel">
+                <div class="mega-menu-header">WEB DESIGN AND UI/UX</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=wireframing" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Wireframing & User Research</a>
+                    <a href="enquiry.html?service=landing" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> High-Converting Landing Pages</a>
+                    <a href="enquiry.html?service=designsystem" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Design Systems & UI Kits</a>
+                </div>
+            </div>
+
+            <!-- Software Sub-links -->
+            <div id="panel-software" class="sub-panel">
+                <div class="mega-menu-header">SOFTWARE DEVELOPMENT</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=saas" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> SaaS Product Engineering</a>
+                    <a href="enquiry.html?service=mobile" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Cross-Platform Mobile Apps</a>
+                    <a href="enquiry.html?service=enterprise" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Enterprise Software Solutions</a>
+                </div>
+            </div>
+
+            <!-- Marketing Sub-links -->
+            <div id="panel-marketing" class="sub-panel">
+                <div class="mega-menu-header">SEO & DIGITAL MARKETING</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=seo" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Technical & On-Page SEO</a>
+                    <a href="enquiry.html?service=ppc" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> PPC & Paid Advertising</a>
+                    <a href="enquiry.html?service=social" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Social Media Growth Campaigns</a>
+                </div>
+            </div>
+
+            <!-- AI Sub-links -->
+            <div id="panel-ai" class="sub-panel">
+                <div class="mega-menu-header">AI INTEGRATION</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=chatbot" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Custom AI Chatbots & Agents</a>
+                    <a href="enquiry.html?service=automation" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Workflow Automation</a>
+                    <a href="enquiry.html?service=llm" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> LLM Fine-Tuning & Integration</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                   <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="enquiry.html" class="btn btn-primary nav-btn">Enquiry Now</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="portfolio" class="portfolio-page section-padding" aria-labelledby="portfolio-title">
+            <div class="container">
+                <div class="portfolio-intro section-header text-center">
+                    <span class="section-badge">Selected Work</span>
+                    <h1 class="section-title" id="portfolio-title">Ideas Shaped Into <span class="gradient-text">Digital Experiences</span></h1>
+                    <p class="section-subtitle">A visual showcase of the kinds of websites and digital products ManjuTech can create for growing brands.</p>
+                </div>
+
+                <div class="portfolio-filters" role="group" aria-label="Filter portfolio concepts">
+                    <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All Concepts</button>
+                    <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web Design</button>
+                    <button class="filter-btn" type="button" data-filter="ecommerce" aria-pressed="false">E-commerce</button>
+                    <button class="filter-btn" type="button" data-filter="app" aria-pressed="false">Apps &amp; Tools</button>
+                </div>
+
+                <div class="portfolio-grid" aria-live="polite">
+                    <article class="portfolio-card" data-category="web">
+                        <div class="portfolio-img-container">
+                            <svg class="portfolio-art" viewBox="0 0 640 400" role="img" aria-labelledby="art-atelier-title" xmlns="http://www.w3.org/2000/svg">
+                                <title id="art-atelier-title">Illustrated boutique interior design website concept</title>
+                                <defs><linearGradient id="atelier-bg" x2="1" y2="1"><stop stop-color="#f6e8d7"/><stop offset="1" stop-color="#d5aa86"/></linearGradient></defs>
+                                <rect width="640" height="400" fill="url(#atelier-bg)"/><rect x="34" y="28" width="572" height="344" rx="14" fill="#fffaf4"/>
+                                <rect x="34" y="28" width="572" height="34" rx="14" fill="#fff"/><circle cx="54" cy="45" r="4" fill="#d77d62"/><circle cx="68" cy="45" r="4" fill="#e4bd70"/><circle cx="82" cy="45" r="4" fill="#8bb28e"/>
+                                <text x="64" y="92" fill="#533f35" font-size="12" font-family="Arial" font-weight="700">ATELIER HOME</text><text x="405" y="92" fill="#7d6b60" font-size="8" font-family="Arial">COLLECTION  ABOUT  JOURNAL</text>
+                                <text x="64" y="151" fill="#4d3b31" font-size="28" font-family="Georgia">Spaces for</text><text x="64" y="182" fill="#4d3b31" font-size="28" font-family="Georgia">slower living.</text><text x="64" y="207" fill="#8b7669" font-size="9" font-family="Arial">Thoughtful objects. Timeless rooms.</text>
+                                <rect x="64" y="226" width="96" height="26" rx="13" fill="#a96f51"/><text x="80" y="243" fill="#fff" font-size="8" font-family="Arial">Explore collection</text>
+                                <rect x="335" y="115" width="231" height="220" rx="7" fill="#ddc3a9"/><rect x="361" y="141" width="105" height="194" rx="52" fill="#f3e8da"/>
+                                <rect x="480" y="211" width="63" height="72" rx="5" fill="#8d6853"/><rect x="470" y="201" width="82" height="14" rx="7" fill="#b68e70"/>
+                                <path d="M512 201c-5-49 14-74 27-85M513 173c-25-30-38-27-48-25M520 151c15-27 30-30 41-29" stroke="#667c59" stroke-width="8" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            <div class="portfolio-overlay"><span class="category-tag">Web Design</span></div>
+                        </div>
+                        <div class="portfolio-card-copy"><h3>Atelier Home</h3><p>A calm, editorial-style concept for a boutique interior and homeware brand.</p></div>
+                    </article>
+
+                    <article class="portfolio-card" data-category="ecommerce">
+                        <div class="portfolio-img-container">
+                            <svg class="portfolio-art" viewBox="0 0 640 400" role="img" aria-labelledby="art-market-title" xmlns="http://www.w3.org/2000/svg">
+                                <title id="art-market-title">Illustrated organic skincare online store concept</title>
+                                <defs><linearGradient id="market-bg" x2="1" y2="1"><stop stop-color="#e2eadb"/><stop offset="1" stop-color="#a9c5a6"/></linearGradient></defs>
+                                <rect width="640" height="400" fill="url(#market-bg)"/><rect x="34" y="28" width="572" height="344" rx="14" fill="#fbfcf7"/>
+                                <rect x="34" y="28" width="572" height="34" rx="14" fill="#fff"/><circle cx="54" cy="45" r="4" fill="#d77d62"/><circle cx="68" cy="45" r="4" fill="#e4bd70"/><circle cx="82" cy="45" r="4" fill="#8bb28e"/>
+                                <text x="65" y="93" fill="#364b3c" font-size="12" font-family="Arial" font-weight="700">MOSS &amp; MEADOW</text><text x="440" y="93" fill="#7d8979" font-size="8" font-family="Arial">SHOP  OUR STORY  BAG (0)</text>
+                                <text x="66" y="150" fill="#304536" font-size="27" font-family="Georgia">Care that comes</text><text x="66" y="181" fill="#304536" font-size="27" font-family="Georgia">from the earth.</text><text x="66" y="205" fill="#788678" font-size="9" font-family="Arial">Plant-based essentials for everyday rituals.</text>
+                                <rect x="66" y="225" width="91" height="27" rx="13" fill="#526f56"/><text x="83" y="242" fill="#fff" font-size="8" font-family="Arial">Shop skincare</text>
+                                <circle cx="465" cy="205" r="105" fill="#e7eddf"/><rect x="402" y="170" width="50" height="110" rx="8" fill="#cfaa70"/><rect x="410" y="152" width="34" height="22" rx="4" fill="#71866a"/>
+                                <rect x="470" y="205" width="58" height="76" rx="8" fill="#d7e1ca"/><rect x="482" y="190" width="34" height="18" rx="4" fill="#819274"/>
+                                <text x="406" y="229" fill="#fff" font-size="7" font-family="Arial">MOSS</text><text x="475" y="244" fill="#53664d" font-size="7" font-family="Arial">DAILY</text>
+                                <path d="M383 270c-22-39-5-72 12-84 16 31 14 57-12 84Zm133-3c11-38 39-48 59-42-10 33-31 50-59 42Z" fill="#7c9975"/>
+                            </svg>
+                            <div class="portfolio-overlay"><span class="category-tag">E-commerce</span></div>
+                        </div>
+                        <div class="portfolio-card-copy"><h3>Moss &amp; Meadow</h3><p>A product-first storefront concept for a natural skincare and wellness line.</p></div>
+                    </article>
+
+                    <article class="portfolio-card" data-category="app">
+                        <div class="portfolio-img-container">
+                            <svg class="portfolio-art" viewBox="0 0 640 400" role="img" aria-labelledby="art-pulse-title" xmlns="http://www.w3.org/2000/svg">
+                                <title id="art-pulse-title">Illustrated fitness tracking mobile app concept</title>
+                                <defs><linearGradient id="pulse-bg" x2="1" y2="1"><stop stop-color="#dbe6fa"/><stop offset="1" stop-color="#9caee0"/></linearGradient></defs>
+                                <rect width="640" height="400" fill="url(#pulse-bg)"/><circle cx="320" cy="200" r="150" fill="#c6d1ed" opacity=".75"/>
+                                <rect x="222" y="34" width="196" height="332" rx="30" fill="#172344"/><rect x="230" y="44" width="180" height="312" rx="23" fill="#f8f9ff"/><rect x="286" y="52" width="68" height="9" rx="5" fill="#172344"/>
+                                <text x="249" y="91" fill="#1e2b4a" font-size="12" font-family="Arial" font-weight="700">Good morning, Alex</text><text x="249" y="109" fill="#78839b" font-size="8" font-family="Arial">Your activity at a glance</text>
+                                <rect x="247" y="126" width="146" height="93" rx="12" fill="#edf1ff"/><text x="260" y="149" fill="#4b5c8b" font-size="8" font-family="Arial">WEEKLY ACTIVITY</text>
+                                <path d="M262 194 280 178 298 185 318 155 336 168 358 143 378 151" fill="none" stroke="#6b7dd3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="320" cy="274" r="41" fill="none" stroke="#e4e9f8" stroke-width="12"/><path d="M320 233a41 41 0 1 1-36 61" fill="none" stroke="#6b7dd3" stroke-width="12" stroke-linecap="round"/>
+                                <text x="299" y="271" fill="#273557" font-size="16" font-family="Arial" font-weight="700">7,842</text><text x="300" y="286" fill="#78839b" font-size="8" font-family="Arial">steps today</text>
+                                <rect x="247" y="326" width="146" height="15" rx="7" fill="#e9edfa"/><circle cx="269" cy="333" r="4" fill="#6b7dd3"/><circle cx="320" cy="333" r="4" fill="#bbc4e0"/><circle cx="371" cy="333" r="4" fill="#bbc4e0"/>
+                            </svg>
+                            <div class="portfolio-overlay"><span class="category-tag">Apps &amp; Tools</span></div>
+                        </div>
+                        <div class="portfolio-card-copy"><h3>Pulse Daily</h3><p>A friendly mobile dashboard concept for personal activity and wellness tracking.</p></div>
+                    </article>
+
+                    <article class="portfolio-card" data-category="web">
+                        <div class="portfolio-img-container">
+                            <svg class="portfolio-art" viewBox="0 0 640 400" role="img" aria-labelledby="art-roast-title" xmlns="http://www.w3.org/2000/svg">
+                                <title id="art-roast-title">Illustrated modern coffee shop website concept</title>
+                                <defs><linearGradient id="roast-bg" x2="1" y2="1"><stop stop-color="#e8d2b8"/><stop offset="1" stop-color="#9f735c"/></linearGradient></defs>
+                                <rect width="640" height="400" fill="url(#roast-bg)"/><rect x="34" y="28" width="572" height="344" rx="14" fill="#f8f1e8"/>
+                                <rect x="34" y="28" width="572" height="34" rx="14" fill="#fff"/><circle cx="54" cy="45" r="4" fill="#d77d62"/><circle cx="68" cy="45" r="4" fill="#e4bd70"/><circle cx="82" cy="45" r="4" fill="#8bb28e"/>
+                                <text x="64" y="94" fill="#3f2d25" font-size="12" font-family="Arial" font-weight="700">NORTH ROAST</text><text x="423" y="94" fill="#7e6a5d" font-size="8" font-family="Arial">MENU  LOCATIONS  STORY</text>
+                                <text x="65" y="158" fill="#3d2c24" font-size="30" font-family="Georgia">A little more</text><text x="65" y="191" fill="#3d2c24" font-size="30" font-family="Georgia">slow in your day.</text><text x="67" y="217" fill="#806b5e" font-size="9" font-family="Arial">Small-batch coffee. Good company.</text>
+                                <rect x="67" y="238" width="105" height="28" rx="14" fill="#563d30"/><text x="86" y="256" fill="#fff" font-size="8" font-family="Arial">Find your coffee</text>
+                                <circle cx="467" cy="205" r="102" fill="#e4d1bb"/><ellipse cx="469" cy="256" rx="67" ry="17" fill="#b99273"/>
+                                <path d="M425 178h83l-10 67c-2 15-61 15-63 0Z" fill="#fffaf2"/><path d="M508 192h20c22 0 17 42-18 37" fill="none" stroke="#fffaf2" stroke-width="10"/>
+                                <ellipse cx="467" cy="178" rx="42" ry="11" fill="#6d4937"/><ellipse cx="467" cy="177" rx="29" ry="6" fill="#c49b78"/>
+                                <path d="M448 177c10-8 22-6 28 1-8 7-18 7-28-1Z" fill="#f1dfbf"/>
+                                <path d="M398 259c-17-31-8-53 4-66 16 24 16 45-4 66Zm117-8c8-26 27-34 42-30-8 23-22 35-42 30Z" fill="#667958"/>
+                            </svg>
+                            <div class="portfolio-overlay"><span class="category-tag">Web Design</span></div>
+                        </div>
+                        <div class="portfolio-card-copy"><h3>North Roast</h3><p>A warm, welcoming web concept for an independent neighborhood coffee shop.</p></div>
+                    </article>
+
+                    <article class="portfolio-card" data-category="ecommerce">
+                        <div class="portfolio-img-container">
+                            <svg class="portfolio-art" viewBox="0 0 640 400" role="img" aria-labelledby="art-form-title" xmlns="http://www.w3.org/2000/svg">
+                                <title id="art-form-title">Illustrated contemporary clothing e-commerce concept</title>
+                                <defs><linearGradient id="form-bg" x2="1" y2="1"><stop stop-color="#efdde0"/><stop offset="1" stop-color="#c5a6b0"/></linearGradient></defs>
+                                <rect width="640" height="400" fill="url(#form-bg)"/><rect x="34" y="28" width="572" height="344" rx="14" fill="#faf7f5"/>
+                                <rect x="34" y="28" width="572" height="34" rx="14" fill="#fff"/><circle cx="54" cy="45" r="4" fill="#d77d62"/><circle cx="68" cy="45" r="4" fill="#e4bd70"/><circle cx="82" cy="45" r="4" fill="#8bb28e"/>
+                                <text x="65" y="94" fill="#3c3537" font-size="12" font-family="Arial" font-weight="700">FORM / STUDIO</text><text x="428" y="94" fill="#82787b" font-size="8" font-family="Arial">NEW IN  CLOTHING  BAG</text>
+                                <rect x="65" y="118" width="244" height="220" rx="5" fill="#e8dadd"/><circle cx="188" cy="174" r="33" fill="#c9947c"/>
+                                <path d="M151 209 128 224l16 92h88l16-92-23-15-19 20h-36Z" fill="#746d74"/>
+                                <path d="M160 214c10 10 43 12 57 0l17 102h-92Z" fill="#b7a3a4"/>
+                                <text x="345" y="156" fill="#6f6569" font-size="8" font-family="Arial" letter-spacing="2">THE EVERYDAY EDIT</text>
+                                <text x="345" y="193" fill="#342e31" font-size="24" font-family="Georgia">Made to move</text><text x="345" y="221" fill="#342e31" font-size="24" font-family="Georgia">with you.</text>
+                                <text x="346" y="248" fill="#81767a" font-size="9" font-family="Arial">Considered layers for wherever</text><text x="346" y="262" fill="#81767a" font-size="9" font-family="Arial">the day takes you.</text>
+                                <rect x="346" y="282" width="102" height="28" rx="14" fill="#4b4145"/><text x="367" y="300" fill="#fff" font-size="8" font-family="Arial">Discover the edit</text>
+                            </svg>
+                            <div class="portfolio-overlay"><span class="category-tag">E-commerce</span></div>
+                        </div>
+                        <div class="portfolio-card-copy"><h3>Form / Studio</h3><p>A clean and considered online shopping concept for a contemporary clothing label.</p></div>
+                    </article>
+
+                    <article class="portfolio-card" data-category="app">
+                        <div class="portfolio-img-container">
+                            <svg class="portfolio-art" viewBox="0 0 640 400" role="img" aria-labelledby="art-flow-title" xmlns="http://www.w3.org/2000/svg">
+                                <title id="art-flow-title">Illustrated project planning dashboard concept</title>
+                                <defs><linearGradient id="flow-bg" x2="1" y2="1"><stop stop-color="#d6e8e8"/><stop offset="1" stop-color="#9cbfc4"/></linearGradient></defs>
+                                <rect width="640" height="400" fill="url(#flow-bg)"/><rect x="50" y="42" width="540" height="316" rx="15" fill="#f7fafb"/>
+                                <rect x="50" y="42" width="137" height="316" rx="15" fill="#203849"/><circle cx="75" cy="70" r="9" fill="#76c4ba"/><text x="92" y="74" fill="#f3f8f8" font-size="11" font-family="Arial" font-weight="700">flowspace</text>
+                                <text x="72" y="117" fill="#a9c0ca" font-size="8" font-family="Arial">WORKSPACE</text><rect x="66" y="130" width="105" height="27" rx="6" fill="#345263"/><circle cx="81" cy="143" r="4" fill="#82c7bd"/><text x="93" y="146" fill="#fff" font-size="8" font-family="Arial">My projects</text>
+                                <text x="72" y="184" fill="#d5e0e5" font-size="8" font-family="Arial">Team calendar</text><text x="72" y="210" fill="#d5e0e5" font-size="8" font-family="Arial">Tasks</text><text x="72" y="236" fill="#d5e0e5" font-size="8" font-family="Arial">Settings</text>
+                                <text x="212" y="83" fill="#233b4b" font-size="16" font-family="Arial" font-weight="700">Good afternoon, Sam</text><text x="212" y="101" fill="#8799a0" font-size="8" font-family="Arial">Here is what's moving this week.</text>
+                                <rect x="212" y="119" width="108" height="58" rx="8" fill="#e7f2ef"/><text x="225" y="140" fill="#6a8c83" font-size="7" font-family="Arial">IN PROGRESS</text><text x="225" y="164" fill="#294a48" font-size="20" font-family="Arial" font-weight="700">08</text>
+                                <rect x="331" y="119" width="108" height="58" rx="8" fill="#edf0fa"/><text x="344" y="140" fill="#7782ab" font-size="7" font-family="Arial">COMPLETED</text><text x="344" y="164" fill="#3d4c7b" font-size="20" font-family="Arial" font-weight="700">24</text>
+                                <rect x="450" y="119" width="112" height="58" rx="8" fill="#fbf0e2"/><text x="463" y="140" fill="#ac8a5e" font-size="7" font-family="Arial">UP NEXT</text><text x="463" y="164" fill="#715b3d" font-size="20" font-family="Arial" font-weight="700">05</text>
+                                <text x="212" y="207" fill="#435b66" font-size="9" font-family="Arial" font-weight="700">Project timeline</text><rect x="212" y="218" width="350" height="1" fill="#e5ebed"/>
+                                <text x="212" y="242" fill="#70858e" font-size="8" font-family="Arial">Brand refresh</text><rect x="321" y="231" width="162" height="12" rx="6" fill="#77b8ad"/>
+                                <text x="212" y="268" fill="#70858e" font-size="8" font-family="Arial">Website launch</text><rect x="321" y="257" width="201" height="12" rx="6" fill="#8898ce"/>
+                                <text x="212" y="294" fill="#70858e" font-size="8" font-family="Arial">Content planning</text><rect x="321" y="283" width="120" height="12" rx="6" fill="#e3b478"/>
+                            </svg>
+                            <div class="portfolio-overlay"><span class="category-tag">Apps &amp; Tools</span></div>
+                        </div>
+                        <div class="portfolio-card-copy"><h3>Flowspace</h3><p>A simple project-planning dashboard concept for collaborative teams.</p></div>
+                    </article>
+                </div>
+
+                <p class="portfolio-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> These are illustrative design concepts created to show possible project directions, not published client case studies.</p>
+            </div>
+        </section>
+
+        <section class="portfolio-cta" aria-labelledby="portfolio-cta-title">
+            <div class="container">
+                <div class="portfolio-cta-card">
+                    <h2 id="portfolio-cta-title">Have an idea of your own?</h2>
+                    <p>Let’s talk about the website, online store, or digital tool you’d like to bring to life.</p>
+                    <a href="enquiry.html" class="btn btn-primary">Start a Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html#home" class="brand-logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 50 250 L 50 50 L 120 50 L 175 160 L 230 50 L 300 50 L 300 250 L 240 250 L 240 120 L 190 220 L 160 220 L 110 120 L 110 250 Z" fill="url(#navLogoGrad)" />
+                            <path d="M 330 50 L 470 50 L 470 110 L 430 110 L 430 250 L 370 250 L 370 110 L 330 110 Z" fill="url(#navLogoGrad)" />
+                            <path d="M 120 170 Q 230 40 340 40 Q 250 120 150 170 Z" fill="url(#navLogoGrad)" />
+                            <path d="M 140 140 Q 260 20 380 20 Q 280 100 170 140 Z" fill="url(#navLogoGrad)" />
+                        </svg>
+                    </div>
+                    <span class="brand-name">Manju<span>Tech</span></span>
+                </a>
+                <p>Engineering premium web experiences with luxury design and modern architecture.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="enquiry.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="career.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+               <div class="social-links">
+    <!-- Existing social links (GitHub, LinkedIn, Twitter) -->
+    <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+
+    <!-- Clickable WhatsApp Icon -->
+    <a href="https://wa.me/9779767745929" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Clickable Email Icon -->
+    <a href="mailto:Sahbablu091@gmail.com" aria-label="Email Us">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+</div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>&copy; <span id="year"></span> ManjuTech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('mobile-toggle').addEventListener('click', event => {
+            const toggle = event.currentTarget;
+            setTimeout(() => {
+                toggle.setAttribute('aria-expanded', String(
+                    document.getElementById('nav-menu').classList.contains('active')
+                ));
+            }, 0);
+        });
+
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(filter => {
+                    filter.classList.remove('active');
+                    filter.setAttribute('aria-pressed', 'false');
+                });
+                button.classList.add('active');
+                button.setAttribute('aria-pressed', 'true');
+            });
+        });
+    </script>
+</body>
+</html>

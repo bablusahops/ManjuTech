@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | ManjuTech</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body class="faq-page">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar-header" id="navbar">
+        <div class="container nav-container">
+           <a href="index.html#home" class="logo">
+    <img src="images/logo.png" alt="ManjuTech Logo" class="brand-logo">
+    <span class="brand-text">
+        <span class="brand-name">Manju<span>Tech</span></span>
+        <span class="brand-tagline">Digital Studio</span>
+    </span>
+</a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                   <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle">
+        Company <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+    </a>
+    
+    <!-- Mega Menu Popup Box -->
+    <div class="mega-menu">
+        <div class="mega-menu-header">COMPANY</div>
+        <div class="mega-menu-grid">
+            
+            <a href="about.html" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">About Us</span>
+                    <span class="item-desc">Who We Are</span>
+                </div>
+            </a>
+
+            <a href="team.html" class="mega-item">
+    <div class="icon-box"><i class="fa-solid fa-user-group"></i></div>
+    <div class="item-text">
+        <span class="item-title">Our Team</span>
+        <span class="item-desc">Designers. Thinkers. Makers.</span>
+    </div>
+</a>
+
+            <a href="technology.html" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">Technology Stacks</span>
+                    <span class="item-desc">Tools We Use</span>
+                </div>
+            </a>
+
+            <a href="testimonial.html" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-comment-dots"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">Testimonials</span>
+                    <span class="item-desc">Client Feedback</span>
+                </div>
+            </a>
+
+            <a href="career.html" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">Careers</span>
+                    <span class="item-desc">Join Our Team</span>
+                </div>
+            </a>
+
+            <a href="faq.html" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-circle-question"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">FAQs</span>
+                    <span class="item-desc">Answers Simplified</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</li>
+                   <li class="nav-item dropdown services-dropdown">
+    <a href="enquiry.html" class="nav-link dropdown-toggle">
+        Services <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+    </a>
+    
+    <!-- 2-Panel Mega Menu Container -->
+    <div class="mega-menu services-mega-menu">
+        
+        <!-- Left Panel: Main Categories -->
+        <div class="services-left-panel">
+            <div class="mega-menu-header">SERVICES</div>
+            
+            <div class="service-cat-item active" data-target="panel-web">
+                <div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="item-text">
+                    <span class="item-title">Web Development</span>
+                    <span class="item-desc">Scalable & High Performance</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-uiux">
+                <div class="icon-box"><i class="fa-solid fa-pen-nib"></i></div>
+                <div class="item-text">
+                    <span class="item-title">Web Design and UI/UX</span>
+                    <span class="item-desc">Conversion optimized websites</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-software">
+                <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+                <div class="item-text">
+                    <span class="item-title">Software Development</span>
+                    <span class="item-desc">Custom Application for business</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-marketing">
+                <div class="icon-box"><i class="fa-solid fa-bullhorn"></i></div>
+                <div class="item-text">
+                    <span class="item-title">SEO and Digital Marketing</span>
+                    <span class="item-desc">Traffic-driven market solution</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-ai">
+                <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+                <div class="item-text">
+                    <span class="item-title">AI Integration & Systems</span>
+                    <span class="item-desc">Smart Automation and AI Tools</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+        </div>
+
+        <!-- Right Panel: Sub-services -->
+        <div class="services-right-panel">
+            
+            <!-- Web Development Sub-links -->
+            <div id="panel-web" class="sub-panel active">
+                <div class="mega-menu-header">WEB DEVELOPMENT</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=fullstack" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Full-Stack Web Development</a>
+                    <a href="enquiry.html?service=wordpress" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> WordPress Web Development</a>
+                    <a href="enquiry.html?service=ecommerce" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Custom E-commerce Development</a>
+                    <a href="enquiry.html?service=woocommerce" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> WooCommerce Development</a>
+                    <a href="enquiry.html?service=api" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> API Development & Integration</a>
+                    <a href="enquiry.html?service=legacy" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Legacy System Modernization</a>
+                </div>
+            </div>
+
+            <!-- UI/UX Sub-links -->
+            <div id="panel-uiux" class="sub-panel">
+                <div class="mega-menu-header">WEB DESIGN AND UI/UX</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=wireframing" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Wireframing & User Research</a>
+                    <a href="enquiry.html?service=landing" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> High-Converting Landing Pages</a>
+                    <a href="enquiry.html?service=designsystem" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Design Systems & UI Kits</a>
+                </div>
+            </div>
+
+            <!-- Software Sub-links -->
+            <div id="panel-software" class="sub-panel">
+                <div class="mega-menu-header">SOFTWARE DEVELOPMENT</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=saas" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> SaaS Product Engineering</a>
+                    <a href="enquiry.html?service=mobile" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Cross-Platform Mobile Apps</a>
+                    <a href="enquiry.html?service=enterprise" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Enterprise Software Solutions</a>
+                </div>
+            </div>
+
+            <!-- Marketing Sub-links -->
+            <div id="panel-marketing" class="sub-panel">
+                <div class="mega-menu-header">SEO & DIGITAL MARKETING</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=seo" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Technical & On-Page SEO</a>
+                    <a href="enquiry.html?service=ppc" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> PPC & Paid Advertising</a>
+                    <a href="enquiry.html?service=social" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Social Media Growth Campaigns</a>
+                </div>
+            </div>
+
+            <!-- AI Sub-links -->
+            <div id="panel-ai" class="sub-panel">
+                <div class="mega-menu-header">AI INTEGRATION</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=chatbot" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Custom AI Chatbots & Agents</a>
+                    <a href="enquiry.html?service=automation" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Workflow Automation</a>
+                    <a href="enquiry.html?service=llm" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> LLM Fine-Tuning & Integration</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                   <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="enquiry.html" class="btn btn-primary nav-btn">Enquiry Now</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-padding" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="faq-hero">
+                    <div class="faq-hero-copy">
+                        <span class="section-badge">Frequently Asked Questions</span>
+                        <h1 class="section-title" id="faq-title">Answers to your questions</h1>
+                        <p class="section-subtitle">Learn about our services, how projects get started, and what to expect when working with ManjuTech.</p>
+                        <a href="#faq-services-title" class="btn btn-primary">Browse questions</a>
+                    </div>
+                    <div class="faq-hero-art" aria-label="AI-inspired illustrations about questions, technology, and project planning">
+                        <figure class="faq-art-card">
+                            <svg viewBox="0 0 420 560" role="img" aria-labelledby="faq-art-title-1" preserveAspectRatio="xMidYMid slice">
+                                <title id="faq-art-title-1">Floating glass question card with connected FAQ bubbles</title>
+                                <defs>
+                                    <linearGradient id="faq-bg-1" x1="0" y1="0" x2="1" y2="1">
+                                        <stop stop-color="#10264f"/>
+                                        <stop offset=".55" stop-color="#293b7a"/>
+                                        <stop offset="1" stop-color="#79488e"/>
+                                    </linearGradient>
+                                    <radialGradient id="faq-glow-1">
+                                        <stop stop-color="#6ce8ed" stop-opacity=".7"/>
+                                        <stop offset="1" stop-color="#6ce8ed" stop-opacity="0"/>
+                                    </radialGradient>
+                                    <linearGradient id="faq-glass-1" x1="0" y1="0" x2="1" y2="1">
+                                        <stop stop-color="#fff" stop-opacity=".32"/>
+                                        <stop offset="1" stop-color="#d5e8ff" stop-opacity=".08"/>
+                                    </linearGradient>
+                                    <filter id="faq-shadow-1" x="-.3" y="-.3" width="1.6" height="1.7">
+                                        <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#080d28" flood-opacity=".35"/>
+                                    </filter>
+                                </defs>
+                                <rect width="420" height="560" fill="url(#faq-bg-1)"/>
+                                <circle cx="214" cy="268" r="220" fill="url(#faq-glow-1)"/>
+                                <circle cx="52" cy="102" r="3" fill="#fff" opacity=".8"/>
+                                <circle cx="356" cy="139" r="4" fill="#b9f4ff" opacity=".85"/>
+                                <circle cx="346" cy="439" r="3" fill="#fff" opacity=".7"/>
+                                <circle cx="72" cy="476" r="4" fill="#ffc9f1" opacity=".8"/>
+                                <path d="M78 188C126 133 145 121 190 139M244 127c46-30 83-21 112 10M245 409c42 28 76 24 108-3" fill="none" stroke="#d7faff" stroke-opacity=".4" stroke-width="2" stroke-dasharray="5 8"/>
+                                <g filter="url(#faq-shadow-1)">
+                                    <rect x="81" y="153" width="258" height="252" rx="30" fill="url(#faq-glass-1)" stroke="#fff" stroke-opacity=".52"/>
+                                    <path d="M150 405v24l30-24" fill="#d9eaff" fill-opacity=".2" stroke="#fff" stroke-opacity=".4"/>
+                                    <rect x="104" y="178" width="212" height="34" rx="17" fill="#101b3c" fill-opacity=".2"/>
+                                    <circle cx="124" cy="195" r="5" fill="#84f2df"/>
+                                    <path d="M140 195h85" stroke="#fff" stroke-opacity=".8" stroke-width="5" stroke-linecap="round"/>
+                                    <circle cx="210" cy="295" r="62" fill="#fff" fill-opacity=".92"/>
+                                    <path d="M189 278c0-14 10-24 23-24 14 0 23 9 23 22 0 11-5 17-14 24-9 7-12 12-12 23" fill="none" stroke="#31518f" stroke-width="9" stroke-linecap="round"/>
+                                    <circle cx="209" cy="342" r="5" fill="#31518f"/>
+                                    <rect x="132" y="369" width="156" height="10" rx="5" fill="#fff" fill-opacity=".55"/>
+                                </g>
+                                <g filter="url(#faq-shadow-1)">
+                                    <rect x="20" y="273" width="94" height="58" rx="18" fill="#fff" fill-opacity=".92"/>
+                                    <path d="m53 294 9 9 18-19" fill="none" stroke="#22a58d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <rect x="71" y="297" width="27" height="5" rx="2.5" fill="#50618d"/>
+                                    <rect x="71" y="307" width="18" height="4" rx="2" fill="#9ba8c4"/>
+                                    <rect x="306" y="337" width="94" height="58" rx="18" fill="#fff" fill-opacity=".94"/>
+                                    <circle cx="330" cy="366" r="12" fill="#7055c7"/>
+                                    <path d="M326 366h8m-4-4v8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+                                    <rect x="349" y="360" width="38" height="5" rx="2.5" fill="#50618d"/>
+                                    <rect x="349" y="371" width="28" height="4" rx="2" fill="#9ba8c4"/>
+                                </g>
+                            </svg>
+                            <figcaption>Questions spark better ideas</figcaption>
+                        </figure>
+                        <figure class="faq-art-card">
+                            <svg viewBox="0 0 360 260" role="img" aria-labelledby="faq-art-title-2" preserveAspectRatio="xMidYMid slice">
+                                <title id="faq-art-title-2">Polished support conversation with a clear answer</title>
+                                <defs>
+                                    <linearGradient id="faq-bg-2" x1="0" y1="0" x2="1" y2="1">
+                                        <stop stop-color="#123b5b"/>
+                                        <stop offset="1" stop-color="#238c91"/>
+                                    </linearGradient>
+                                    <linearGradient id="faq-answer-2" x1="0" y1="0" x2="1" y2="1">
+                                        <stop stop-color="#8ff0dc"/>
+                                        <stop offset="1" stop-color="#b6f5c9"/>
+                                    </linearGradient>
+                                    <filter id="faq-shadow-2" x="-.2" y="-.2" width="1.5" height="1.6">
+                                        <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#082239" flood-opacity=".3"/>
+                                    </filter>
+                                </defs>
+                                <rect width="360" height="260" fill="url(#faq-bg-2)"/>
+                                <circle cx="287" cy="49" r="76" fill="#adfff2" opacity=".13"/>
+                                <path d="M26 218h308" stroke="#d7fffa" stroke-opacity=".18"/>
+                                <g filter="url(#faq-shadow-2)">
+                                    <rect x="38" y="39" width="213" height="85" rx="18" fill="#fff" fill-opacity=".96"/>
+                                    <path d="m57 122-5 17 25-16" fill="#fff" fill-opacity=".96"/>
+                                    <circle cx="62" cy="65" r="10" fill="#4778d0"/>
+                                    <path d="M58 65h8m-4-4v8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                                    <rect x="81" y="59" width="145" height="7" rx="3.5" fill="#3b4e78"/>
+                                    <rect x="57" y="83" width="164" height="5" rx="2.5" fill="#c5cee0"/>
+                                    <rect x="57" y="96" width="117" height="5" rx="2.5" fill="#d8dfeb"/>
+                                    <rect x="122" y="133" width="206" height="88" rx="18" fill="url(#faq-answer-2)"/>
+                                    <path d="m293 219 21 15-3-18" fill="#a5f1d8"/>
+                                    <circle cx="146" cy="159" r="9" fill="#fff" fill-opacity=".92"/>
+                                    <path d="m142 159 3 3 6-7" fill="none" stroke="#19957e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <rect x="164" y="155" width="132" height="7" rx="3.5" fill="#226b68"/>
+                                    <rect x="143" y="180" width="161" height="5" rx="2.5" fill="#398a7e" opacity=".7"/>
+                                    <rect x="143" y="193" width="104" height="5" rx="2.5" fill="#398a7e" opacity=".48"/>
+                                </g>
+                            </svg>
+                            <figcaption>Clear answers, helpful guidance</figcaption>
+                        </figure>
+                        <figure class="faq-art-card">
+                            <svg viewBox="0 0 360 260" role="img" aria-labelledby="faq-art-title-3" preserveAspectRatio="xMidYMid slice">
+                                <title id="faq-art-title-3">FAQ checklist with checked answers and a highlighted question</title>
+                                <defs>
+                                    <linearGradient id="faq-bg-3" x1="0" y1="0" x2="1" y2="1">
+                                        <stop stop-color="#3c2a70"/>
+                                        <stop offset="1" stop-color="#bc5b77"/>
+                                    </linearGradient>
+                                    <linearGradient id="faq-paper-3" x1="0" y1="0" x2="1" y2="1">
+                                        <stop stop-color="#fff"/>
+                                        <stop offset="1" stop-color="#e7edff"/>
+                                    </linearGradient>
+                                    <filter id="faq-shadow-3" x="-.2" y="-.2" width="1.5" height="1.6">
+                                        <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#25153d" flood-opacity=".35"/>
+                                    </filter>
+                                </defs>
+                                <rect width="360" height="260" fill="url(#faq-bg-3)"/>
+                                <circle cx="53" cy="46" r="7" fill="#b4f4ff"/>
+                                <circle cx="314" cy="210" r="8" fill="#ffe7a0"/>
+                                <circle cx="304" cy="42" r="5" fill="#ffd1f4"/>
+                                <g filter="url(#faq-shadow-3)">
+                                    <rect x="75" y="30" width="210" height="202" rx="18" fill="url(#faq-paper-3)"/>
+                                    <rect x="98" y="52" width="107" height="8" rx="4" fill="#344c85"/>
+                                    <circle cx="251" cy="56" r="13" fill="#e8e7ff"/>
+                                    <path d="M246 56h10m-5-5v10" stroke="#6b59bd" stroke-width="2" stroke-linecap="round"/>
+                                    <rect x="98" y="82" width="164" height="42" rx="10" fill="#e8f6f7"/>
+                                    <circle cx="116" cy="103" r="9" fill="#39b79e"/>
+                                    <path d="m112 103 3 3 6-7" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <rect x="134" y="99" width="111" height="6" rx="3" fill="#526582"/>
+                                    <rect x="98" y="134" width="164" height="42" rx="10" fill="#f3edff"/>
+                                    <circle cx="116" cy="155" r="9" fill="#7b63d2"/>
+                                    <path d="m112 155 3 3 6-7" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <rect x="134" y="151" width="96" height="6" rx="3" fill="#526582"/>
+                                    <rect x="98" y="186" width="164" height="27" rx="9" fill="#fff0f4"/>
+                                    <circle cx="116" cy="199" r="8" fill="#dc6689"/>
+                                    <path d="M113 199h6m-3-3v6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+                                    <rect x="132" y="196" width="88" height="5" rx="2.5" fill="#7d5570"/>
+                                </g>
+                            </svg>
+                            <figcaption>From first question to launch</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="faq-content">
+                    <section class="faq-group" aria-labelledby="faq-services-title">
+                        <h2 class="faq-group-title" id="faq-services-title"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Services</h2>
+                        <div class="faq-list">
+                            <details class="faq-item">
+                                <summary>What services does ManjuTech provide?</summary>
+                                <div class="faq-answer"><p>Our services include web development, website design and UI/UX, custom software development, SEO and digital marketing, and AI integration. Share your goals with us and we can discuss which services fit your project.</p></div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>Can you build a website tailored to my business?</summary>
+                                <div class="faq-answer"><p>Yes. We can discuss your audience, goals, features, and preferred look, then recommend an approach for a custom website or web application.</p></div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>Do you work on existing websites or applications?</summary>
+                                <div class="faq-answer"><p>We can discuss updates, new features, integrations, or modernization for an existing project. Contact us with a brief description of the current system and the changes you need.</p></div>
+                            </details>
+                        </div>
+                    </section>
+
+                    <section class="faq-group" aria-labelledby="faq-process-title">
+                        <h2 class="faq-group-title" id="faq-process-title"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Project process</h2>
+                        <div class="faq-list">
+                            <details class="faq-item">
+                                <summary>How do I get started?</summary>
+                                <div class="faq-answer"><p>Send us an enquiry with your project goals, requirements, and any timing or budget details you can share. We will review the information and follow up to discuss the next steps.</p></div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>What information should I include in my enquiry?</summary>
+                                <div class="faq-answer"><p>Tell us what you want to build or improve, who it is for, which features matter most, and any target dates. Links to examples or an existing website are helpful too.</p></div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>How long will my project take?</summary>
+                                <div class="faq-answer"><p>Timing depends on the scope, features, and feedback process. After learning more about your requirements, we can discuss an estimated schedule for your project.</p></div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>How much does a project cost?</summary>
+                                <div class="faq-answer"><p>Pricing depends on the work involved and the requirements. Contact us with your project details so we can understand the scope and discuss an estimate.</p></div>
+                            </details>
+                        </div>
+                    </section>
+
+                    <section class="faq-group" aria-labelledby="faq-support-title">
+                        <h2 class="faq-group-title" id="faq-support-title"><i class="fa-solid fa-headset" aria-hidden="true"></i> Support and communication</h2>
+                        <div class="faq-list">
+                            <details class="faq-item">
+                                <summary>Can I request support after my project is delivered?</summary>
+                                <div class="faq-answer"><p>Support and ongoing maintenance can be discussed as part of your project requirements. Let us know what kind of help you expect so we can clarify the available scope and arrangements.</p></div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>How can I contact ManjuTech?</summary>
+                                <div class="faq-answer"><p>Use our contact page or send an email to <a href="mailto:Sahbablu091@gmail.com">Sahbablu091@gmail.com</a>. For project requests, the enquiry page helps you share the relevant details.</p></div>
+                            </details>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="faq-contact">
+                    <h2 class="section-title">Still have a question?</h2>
+                    <p>If you did not find what you are looking for, tell us what you need and we will be glad to discuss it.</p>
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="enquiry.html" class="btn btn-secondary">Send an Enquiry</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html#home" class="brand-logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 50 250 L 50 50 L 120 50 L 175 160 L 230 50 L 300 50 L 300 250 L 240 250 L 240 120 L 190 220 L 160 220 L 110 120 L 110 250 Z" fill="url(#navLogoGrad)" />
+                            <path d="M 330 50 L 470 50 L 470 110 L 430 110 L 430 250 L 370 250 L 370 110 L 330 110 Z" fill="url(#navLogoGrad)" />
+                            <path d="M 120 170 Q 230 40 340 40 Q 250 120 150 170 Z" fill="url(#navLogoGrad)" />
+                            <path d="M 140 140 Q 260 20 380 20 Q 280 100 170 140 Z" fill="url(#navLogoGrad)" />
+                        </svg>
+                    </div>
+                    <span class="brand-name">Manju<span>Tech</span></span>
+                </a>
+                <p>Engineering premium web experiences with luxury design and modern architecture.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="enquiry.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="career.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+               <div class="social-links">
+    <!-- Existing social links (GitHub, LinkedIn, Twitter) -->
+    <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+
+    <!-- Clickable WhatsApp Icon -->
+    <a href="https://wa.me/9779767745929" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Clickable Email Icon -->
+    <a href="mailto:Sahbablu091@gmail.com" aria-label="Email Us">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+</div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>&copy; <span id="year"></span> ManjuTech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

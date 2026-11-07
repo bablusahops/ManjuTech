@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Stack | ManjuTech Digital Studio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar-header" id="navbar">
+        <div class="container nav-container">
+           <a href="index.html#home" class="logo">
+    <img src="images/logo.png" alt="ManjuTech Logo" class="brand-logo">
+    <span class="brand-text">
+        <span class="brand-name">Manju<span>Tech</span></span>
+        <span class="brand-tagline">Digital Studio</span>
+    </span>
+</a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                   <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle">
+        Company <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+    </a>
+    
+    <!-- Mega Menu Popup Box -->
+    <div class="mega-menu">
+        <div class="mega-menu-header">COMPANY</div>
+        <div class="mega-menu-grid">
+            
+            <a href="about.html" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">About Us</span>
+                    <span class="item-desc">Who We Are</span>
+                </div>
+            </a>
+
+            <a href="team.html" class="mega-item">
+    <div class="icon-box"><i class="fa-solid fa-user-group"></i></div>
+    <div class="item-text">
+        <span class="item-title">Our Team</span>
+        <span class="item-desc">Designers. Thinkers. Makers.</span>
+    </div>
+</a>
+
+            <a href="technology.html#technology-title" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">Technology Stacks</span>
+                    <span class="item-desc">Tools We Use</span>
+                </div>
+            </a>
+
+            <a href="testimonial.html" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-comment-dots"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">Testimonials</span>
+                    <span class="item-desc">Client Feedback</span>
+                </div>
+            </a>
+
+            <a href="career.html" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">Careers</span>
+                    <span class="item-desc">Join Our Team</span>
+                </div>
+            </a>
+
+            <a href="faq.html" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-circle-question"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">FAQs</span>
+                    <span class="item-desc">Answers Simplified</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</li>
+                   <li class="nav-item dropdown services-dropdown">
+    <a href="enquiry.html" class="nav-link dropdown-toggle">
+        Services <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+    </a>
+    
+    <!-- 2-Panel Mega Menu Container -->
+    <div class="mega-menu services-mega-menu">
+        
+        <!-- Left Panel: Main Categories -->
+        <div class="services-left-panel">
+            <div class="mega-menu-header">SERVICES</div>
+            
+            <div class="service-cat-item active" data-target="panel-web">
+                <div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="item-text">
+                    <span class="item-title">Web Development</span>
+                    <span class="item-desc">Scalable & High Performance</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-uiux">
+                <div class="icon-box"><i class="fa-solid fa-pen-nib"></i></div>
+                <div class="item-text">
+                    <span class="item-title">Web Design and UI/UX</span>
+                    <span class="item-desc">Conversion optimized websites</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-software">
+                <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+                <div class="item-text">
+                    <span class="item-title">Software Development</span>
+                    <span class="item-desc">Custom Application for business</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-marketing">
+                <div class="icon-box"><i class="fa-solid fa-bullhorn"></i></div>
+                <div class="item-text">
+                    <span class="item-title">SEO and Digital Marketing</span>
+                    <span class="item-desc">Traffic-driven market solution</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-ai">
+                <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+                <div class="item-text">
+                    <span class="item-title">AI Integration & Systems</span>
+                    <span class="item-desc">Smart Automation and AI Tools</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+        </div>
+
+        <!-- Right Panel: Sub-services -->
+        <div class="services-right-panel">
+            
+            <!-- Web Development Sub-links -->
+            <div id="panel-web" class="sub-panel active">
+                <div class="mega-menu-header">WEB DEVELOPMENT</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=fullstack" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Full-Stack Web Development</a>
+                    <a href="enquiry.html?service=wordpress" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> WordPress Web Development</a>
+                    <a href="enquiry.html?service=ecommerce" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Custom E-commerce Development</a>
+                    <a href="enquiry.html?service=woocommerce" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> WooCommerce Development</a>
+                    <a href="enquiry.html?service=api" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> API Development & Integration</a>
+                    <a href="enquiry.html?service=legacy" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Legacy System Modernization</a>
+                </div>
+            </div>
+
+            <!-- UI/UX Sub-links -->
+            <div id="panel-uiux" class="sub-panel">
+                <div class="mega-menu-header">WEB DESIGN AND UI/UX</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=wireframing" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Wireframing & User Research</a>
+                    <a href="enquiry.html?service=landing" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> High-Converting Landing Pages</a>
+                    <a href="enquiry.html?service=designsystem" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Design Systems & UI Kits</a>
+                </div>
+            </div>
+
+            <!-- Software Sub-links -->
+            <div id="panel-software" class="sub-panel">
+                <div class="mega-menu-header">SOFTWARE DEVELOPMENT</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=saas" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> SaaS Product Engineering</a>
+                    <a href="enquiry.html?service=mobile" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Cross-Platform Mobile Apps</a>
+                    <a href="enquiry.html?service=enterprise" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Enterprise Software Solutions</a>
+                </div>
+            </div>
+
+            <!-- Marketing Sub-links -->
+            <div id="panel-marketing" class="sub-panel">
+                <div class="mega-menu-header">SEO & DIGITAL MARKETING</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=seo" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Technical & On-Page SEO</a>
+                    <a href="enquiry.html?service=ppc" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> PPC & Paid Advertising</a>
+                    <a href="enquiry.html?service=social" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Social Media Growth Campaigns</a>
+                </div>
+            </div>
+
+            <!-- AI Sub-links -->
+            <div id="panel-ai" class="sub-panel">
+                <div class="mega-menu-header">AI INTEGRATION</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=chatbot" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Custom AI Chatbots & Agents</a>
+                    <a href="enquiry.html?service=automation" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Workflow Automation</a>
+                    <a href="enquiry.html?service=llm" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> LLM Fine-Tuning & Integration</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                   <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="enquiry.html" class="btn btn-primary nav-btn">Enquiry Now</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-padding" aria-labelledby="technology-title">
+            <div class="container">
+                <div class="technology-hero">
+                    <span class="section-badge">Our Technology Stack</span>
+                    <h1 class="section-title" id="technology-title">The right tools for the right solution</h1>
+                    <p class="section-subtitle">We choose technologies based on your goals, features, budget, and future plans. Here are some of the tools and platforms that can support your project.</p>
+                    <a href="enquiry.html" class="btn btn-primary">Discuss your project</a>
+                </div>
+
+                <div class="technology-grid">
+                    <article class="service-card technology-card">
+                        <div class="feature-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+                        <h2>Frontend</h2>
+                        <p>The visual layer that makes websites responsive, clear, and interactive.</p>
+                        <ul class="technology-list">
+                            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card technology-card">
+                        <div class="feature-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></div>
+                        <h2>Backend</h2>
+                        <p>Server-side tools for application logic, APIs, and data processing.</p>
+                        <ul class="technology-list">
+                            <li>Node.js</li><li>PHP</li><li>REST APIs</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card technology-card">
+                        <div class="feature-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+                        <h2>Databases</h2>
+                        <p>Data storage selected to suit the structure and needs of your application.</p>
+                        <ul class="technology-list">
+                            <li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card technology-card">
+                        <div class="feature-icon"><i class="fa-brands fa-wordpress" aria-hidden="true"></i></div>
+                        <h2>CMS &amp; e-commerce</h2>
+                        <p>Flexible platforms for managing content, products, and online stores.</p>
+                        <ul class="technology-list">
+                            <li>WordPress</li><li>WooCommerce</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card technology-card">
+                        <div class="feature-icon"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i></div>
+                        <h2>Design &amp; collaboration</h2>
+                        <p>Tools that help plan interfaces, share feedback, and organize delivery.</p>
+                        <ul class="technology-list">
+                            <li>Figma</li><li>Git</li><li>GitHub</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card technology-card">
+                        <div class="feature-icon"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></div>
+                        <h2>AI &amp; integrations</h2>
+                        <p>AI services and third-party integrations can be added when they fit your use case.</p>
+                        <ul class="technology-list">
+                            <li>AI APIs</li><li>Automation</li><li>Third-party APIs</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="technology-note">
+                    <strong>Technology should serve your goals.</strong> The options shown are examples, not a requirement to use every tool. We will discuss the trade-offs and recommend a suitable stack for your specific project.
+                </div>
+
+                <div class="technology-cta">
+                    <h2 class="section-title">Not sure what your project needs?</h2>
+                    <p>Tell us what you are planning, and we can help you explore a practical technical approach.</p>
+                    <a href="contact.html" class="btn btn-primary">Talk to our team</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html#home" class="brand-logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 50 250 L 50 50 L 120 50 L 175 160 L 230 50 L 300 50 L 300 250 L 240 250 L 240 120 L 190 220 L 160 220 L 110 120 L 110 250 Z" fill="url(#navLogoGrad)" />
+                            <path d="M 330 50 L 470 50 L 470 110 L 430 110 L 430 250 L 370 250 L 370 110 L 330 110 Z" fill="url(#navLogoGrad)" />
+                            <path d="M 120 170 Q 230 40 340 40 Q 250 120 150 170 Z" fill="url(#navLogoGrad)" />
+                            <path d="M 140 140 Q 260 20 380 20 Q 280 100 170 140 Z" fill="url(#navLogoGrad)" />
+                        </svg>
+                    </div>
+                    <span class="brand-name">Manju<span>Tech</span></span>
+                </a>
+                <p>Engineering premium web experiences with luxury design and modern architecture.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                <li><a href="enquiry.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="career.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+               <div class="social-links">
+    <!-- Existing social links (GitHub, LinkedIn, Twitter) -->
+    <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+
+    <!-- Clickable WhatsApp Icon -->
+    <a href="https://wa.me/9779767745929" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Clickable Email Icon -->
+    <a href="mailto:Sahbablu091@gmail.com" aria-label="Email Us">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+</div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>&copy; <span id="year"></span> ManjuTech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

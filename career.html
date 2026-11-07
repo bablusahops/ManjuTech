@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore career opportunities at ManjuTech. No current openings are listed; get in touch to share your interest in future opportunities.">
+    <title>Careers | ManjuTech Digital Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .careers-hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+            align-items: center;
+            gap: 64px;
+        }
+
+        .careers-intro {
+            max-width: 600px;
+        }
+
+        .careers-intro .section-subtitle {
+            margin: 0 0 30px;
+        }
+
+        .career-photo-grid {
+            min-height: 460px;
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .career-photo {
+            position: relative;
+            min-height: 0;
+            overflow: hidden;
+            border: var(--border-glass);
+            border-radius: 18px;
+            background: var(--bg-navy-card);
+            box-shadow: 0 18px 40px rgba(30, 64, 175, 0.18);
+        }
+
+        .career-photo:first-child {
+            grid-row: 1 / 3;
+            border-radius: 18px;
+        }
+
+        .career-artwork {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0;
+            transition: transform 0.4s ease;
+        }
+
+        .career-photo:hover .career-artwork {
+            transform: scale(1.04);
+        }
+
+        .career-photo figcaption {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 30px 18px 16px;
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: 600;
+            background: linear-gradient(transparent, rgba(10, 15, 30, 0.85));
+        }
+
+        .career-team-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 18px;
+            padding: 11px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.75);
+            border-radius: 8px;
+            background: #fff;
+            color: #1e40af;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        .career-team-link:hover {
+            transform: translateY(-2px);
+            background: #f3f7ff;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
+        }
+
+        .career-team-link:focus-visible {
+            outline: 3px solid var(--blue-light);
+            outline-offset: 3px;
+        }
+
+        .career-values .section-header {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .career-values {
+            margin-top: 90px;
+        }
+
+        .career-values .service-card {
+            height: 100%;
+        }
+
+        .career-openings {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 36px;
+            border: var(--border-glass);
+            border-radius: 16px;
+            background: var(--bg-navy-card);
+            text-align: center;
+        }
+
+        .career-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 16px;
+            padding: 7px 13px;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            border-radius: 30px;
+            color: var(--blue-light);
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        .career-openings h2 {
+            margin-bottom: 12px;
+        }
+
+        .career-openings p {
+            max-width: 620px;
+            margin: 0 auto 24px;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 768px) {
+            .careers-hero {
+                grid-template-columns: 1fr;
+                gap: 36px;
+            }
+
+            .career-photo-grid {
+                min-height: 350px;
+                gap: 10px;
+            }
+
+            .career-openings {
+                padding: 26px 20px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 992px) {
+            .careers-hero {
+                grid-template-columns: 1fr 0.9fr;
+                gap: 32px;
+            }
+
+            .career-photo-grid {
+                min-height: 380px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar-header" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="ManjuTech Logo" class="brand-logo">
+                <span class="brand-text">
+                    <span class="brand-name">Manju<span>Tech</span></span>
+                    <span class="brand-tagline">Digital Studio</span>
+                </span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" aria-current="page">
+                            Company <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-header">COMPANY</div>
+                            <div class="mega-menu-grid">
+                                <a href="about.html" class="mega-item">
+                                    <div class="icon-box"><i class="fa-solid fa-circle-info"></i></div>
+                                    <div class="item-text">
+                                        <span class="item-title">About Us</span>
+                                        <span class="item-desc">Who We Are</span>
+                                    </div>
+                                </a>
+                                <a href="team.html" class="mega-item">
+                                    <div class="icon-box"><i class="fa-solid fa-user-group"></i></div>
+                                    <div class="item-text">
+                                        <span class="item-title">Our Team</span>
+                                        <span class="item-desc">Designers. Thinkers. Makers.</span>
+                                    </div>
+                                </a>
+                                <a href="technology.html" class="mega-item">
+                                    <div class="icon-box"><i class="fa-solid fa-robot"></i></div>
+                                    <div class="item-text">
+                                        <span class="item-title">Technology Stacks</span>
+                                        <span class="item-desc">Tools We Use</span>
+                                    </div>
+                                </a>
+                                <a href="testimonial.html" class="mega-item">
+                                    <div class="icon-box"><i class="fa-solid fa-comment-dots"></i></div>
+                                    <div class="item-text">
+                                        <span class="item-title">Testimonials</span>
+                                        <span class="item-desc">Client Feedback</span>
+                                    </div>
+                                </a>
+                                <a href="career.html" class="mega-item" aria-current="page">
+                                    <div class="icon-box"><i class="fa-solid fa-briefcase"></i></div>
+                                    <div class="item-text">
+                                        <span class="item-title">Careers</span>
+                                        <span class="item-desc">Join Our Team</span>
+                                    </div>
+                                </a>
+                                <a href="faq.html" class="mega-item">
+                                    <div class="icon-box"><i class="fa-solid fa-circle-question"></i></div>
+                                    <div class="item-text">
+                                        <span class="item-title">FAQs</span>
+                                        <span class="item-desc">Answers Simplified</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown services-dropdown">
+                        <a href="enquiry.html" class="nav-link dropdown-toggle">
+                            Services <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <div class="mega-menu services-mega-menu">
+                            <div class="services-left-panel">
+                                <div class="mega-menu-header">SERVICES</div>
+                                <div class="service-cat-item active" data-target="panel-web">
+                                    <div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+                                    <div class="item-text">
+                                        <span class="item-title">Web Development</span>
+                                        <span class="item-desc">Scalable &amp; High Performance</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </div>
+                                <div class="service-cat-item" data-target="panel-uiux">
+                                    <div class="icon-box"><i class="fa-solid fa-pen-nib"></i></div>
+                                    <div class="item-text">
+                                        <span class="item-title">Web Design and UI/UX</span>
+                                        <span class="item-desc">Conversion optimized websites</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </div>
+                                <div class="service-cat-item" data-target="panel-software">
+                                    <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+                                    <div class="item-text">
+                                        <span class="item-title">Software Development</span>
+                                        <span class="item-desc">Custom Application for business</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </div>
+                                <div class="service-cat-item" data-target="panel-marketing">
+                                    <div class="icon-box"><i class="fa-solid fa-bullhorn"></i></div>
+                                    <div class="item-text">
+                                        <span class="item-title">SEO and Digital Marketing</span>
+                                        <span class="item-desc">Traffic-driven market solution</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </div>
+                                <div class="service-cat-item" data-target="panel-ai">
+                                    <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+                                    <div class="item-text">
+                                        <span class="item-title">AI Integration &amp; Systems</span>
+                                        <span class="item-desc">Smart Automation and AI Tools</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                                </div>
+                            </div>
+                            <div class="services-right-panel">
+                                <div id="panel-web" class="sub-panel active">
+                                    <div class="mega-menu-header">WEB DEVELOPMENT</div>
+                                    <div class="sub-links-list">
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Full-Stack Web Development</a>
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> WordPress Web Development</a>
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Custom E-commerce Development</a>
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> WooCommerce Development</a>
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> API Development &amp; Integration</a>
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Legacy System Modernization</a>
+                                    </div>
+                                </div>
+                                <div id="panel-uiux" class="sub-panel">
+                                    <div class="mega-menu-header">WEB DESIGN AND UI/UX</div>
+                                    <div class="sub-links-list">
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Wireframing &amp; User Research</a>
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> High-Converting Landing Pages</a>
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Design Systems &amp; UI Kits</a>
+                                    </div>
+                                </div>
+                                <div id="panel-software" class="sub-panel">
+                                    <div class="mega-menu-header">SOFTWARE DEVELOPMENT</div>
+                                    <div class="sub-links-list">
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> SaaS Product Engineering</a>
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Cross-Platform Mobile Apps</a>
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Enterprise Software Solutions</a>
+                                    </div>
+                                </div>
+                                <div id="panel-marketing" class="sub-panel">
+                                    <div class="mega-menu-header">SEO &amp; DIGITAL MARKETING</div>
+                                    <div class="sub-links-list">
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Technical &amp; On-Page SEO</a>
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> PPC &amp; Paid Advertising</a>
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Social Media Growth Campaigns</a>
+                                    </div>
+                                </div>
+                                <div id="panel-ai" class="sub-panel">
+                                    <div class="mega-menu-header">AI INTEGRATION</div>
+                                    <div class="sub-links-list">
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Custom AI Chatbots &amp; Agents</a>
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Workflow Automation</a>
+                                        <a href="enquiry.html" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> LLM Fine-Tuning &amp; Integration</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="index.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="enquiry.html" class="btn btn-primary nav-btn">Enquiry Now</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="careers-page">
+        <section id="careers" class="section-padding">
+            <div class="container">
+                <div class="careers-hero">
+                    <div class="careers-intro">
+                        <span class="section-badge">Careers at ManjuTech</span>
+                        <h1 class="section-title">Build meaningful digital experiences with us</h1>
+                        <p class="section-subtitle">We bring design and technology together to solve real business challenges. If you care about thoughtful work and making the web better for people, we would be glad to hear from you.</p>
+                        <a href="#open-positions" class="btn btn-primary">Explore opportunities</a>
+                        <a href="team.html" class="career-team-link">Meet our team <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="career-photo-grid" aria-label="AI-inspired digital illustrations">
+                        <figure class="career-photo">
+                            <svg class="career-artwork" viewBox="0 0 480 640" role="img" aria-labelledby="career-art-title-1" preserveAspectRatio="xMidYMid slice">
+                                <title id="career-art-title-1">Abstract glowing neural network artwork</title>
+                                <defs>
+                                    <linearGradient id="career-bg-1" x1="0" y1="0" x2="1" y2="1">
+                                        <stop stop-color="#101943"/>
+                                        <stop offset="1" stop-color="#5a1d70"/>
+                                    </linearGradient>
+                                    <radialGradient id="career-glow-1">
+                                        <stop stop-color="#85e8ff" stop-opacity=".85"/>
+                                        <stop offset="1" stop-color="#85e8ff" stop-opacity="0"/>
+                                    </radialGradient>
+                                </defs>
+                                <rect width="480" height="640" fill="url(#career-bg-1)"/>
+                                <circle cx="238" cy="298" r="205" fill="url(#career-glow-1)"/>
+                                <g fill="none" stroke="#90eaff" stroke-opacity=".62" stroke-width="2">
+                                    <path d="M75 202 154 244 112 328 206 365 154 454 249 477 301 395 390 433 412 336 332 286 378 202 283 174 229 242 147 166Z"/>
+                                    <path d="m75 202 154 40 104 44 79 47-112 62-94-30-52 89"/>
+                                    <path d="m147 166 7 78-42 84 94 37 83 112 42-82 1-109 46-84"/>
+                                    <circle cx="75" cy="202" r="8" fill="#b9f4ff"/>
+                                    <circle cx="154" cy="244" r="8" fill="#b9f4ff"/>
+                                    <circle cx="112" cy="328" r="8" fill="#b9f4ff"/>
+                                    <circle cx="206" cy="365" r="8" fill="#b9f4ff"/>
+                                    <circle cx="154" cy="454" r="8" fill="#b9f4ff"/>
+                                    <circle cx="249" cy="477" r="8" fill="#b9f4ff"/>
+                                    <circle cx="301" cy="395" r="8" fill="#b9f4ff"/>
+                                    <circle cx="390" cy="433" r="8" fill="#b9f4ff"/>
+                                    <circle cx="412" cy="336" r="8" fill="#b9f4ff"/>
+                                    <circle cx="332" cy="286" r="8" fill="#b9f4ff"/>
+                                    <circle cx="378" cy="202" r="8" fill="#b9f4ff"/>
+                                    <circle cx="283" cy="174" r="8" fill="#b9f4ff"/>
+                                    <circle cx="229" cy="242" r="13" fill="#f3a5ff"/>
+                                </g>
+                                <g fill="#fff" fill-opacity=".72">
+                                    <circle cx="76" cy="112" r="2"/><circle cx="369" cy="119" r="3"/>
+                                    <circle cx="428" cy="512" r="2"/><circle cx="64" cy="526" r="3"/>
+                                    <circle cx="327" cy="548" r="2"/><circle cx="126" cy="82" r="2"/>
+                                </g>
+                            </svg>
+                            <figcaption>Ideas connected through intelligence</figcaption>
+                        </figure>
+                        <figure class="career-photo">
+                            <svg class="career-artwork" viewBox="0 0 480 320" role="img" aria-labelledby="career-art-title-2" preserveAspectRatio="xMidYMid slice">
+                                <title id="career-art-title-2">Abstract AI interface with luminous data panels</title>
+                                <defs>
+                                    <linearGradient id="career-bg-2" x1="0" y1="0" x2="1" y2="1">
+                                        <stop stop-color="#092b49"/>
+                                        <stop offset="1" stop-color="#12666c"/>
+                                    </linearGradient>
+                                    <linearGradient id="career-panel-2" x1="0" y1="0" x2="1" y2="1">
+                                        <stop stop-color="#53d8ed" stop-opacity=".35"/>
+                                        <stop offset="1" stop-color="#b9ffdb" stop-opacity=".08"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="480" height="320" fill="url(#career-bg-2)"/>
+                                <circle cx="255" cy="143" r="104" fill="#54e4ef" opacity=".12"/>
+                                <rect x="98" y="58" width="285" height="204" rx="18" fill="url(#career-panel-2)" stroke="#9ef8ed" stroke-opacity=".55"/>
+                                <path d="M98 96h285" stroke="#9ef8ed" stroke-opacity=".45"/>
+                                <circle cx="121" cy="77" r="5" fill="#ff9bb5"/>
+                                <circle cx="140" cy="77" r="5" fill="#ffe38c"/>
+                                <circle cx="159" cy="77" r="5" fill="#a5ffd5"/>
+                                <g fill="none" stroke="#b2fff0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M137 212v-30h32v30m18 0v-62h32v62m18 0v-43h32v43m18 0v-78h32v78"/>
+                                    <path d="m137 150 41-25 43 12 38-35 47 16"/>
+                                </g>
+                                <circle cx="306" cy="118" r="7" fill="#ffb5ec"/>
+                            </svg>
+                            <figcaption>Turning information into insight</figcaption>
+                        </figure>
+                        <figure class="career-photo">
+                            <svg class="career-artwork" viewBox="0 0 480 320" role="img" aria-labelledby="career-art-title-3" preserveAspectRatio="xMidYMid slice">
+                                <title id="career-art-title-3">Abstract digital creativity with a radiant geometric form</title>
+                                <defs>
+                                    <linearGradient id="career-bg-3" x1="0" y1="0" x2="1" y2="1">
+                                        <stop stop-color="#321b5d"/>
+                                        <stop offset="1" stop-color="#a33b62"/>
+                                    </linearGradient>
+                                    <radialGradient id="career-orb-3">
+                                        <stop stop-color="#fff3b0"/>
+                                        <stop offset=".45" stop-color="#ff9fca"/>
+                                        <stop offset="1" stop-color="#b280ff" stop-opacity=".12"/>
+                                    </radialGradient>
+                                </defs>
+                                <rect width="480" height="320" fill="url(#career-bg-3)"/>
+                                <circle cx="240" cy="153" r="119" fill="url(#career-orb-3)" opacity=".8"/>
+                                <g fill="none" stroke="#fff" stroke-opacity=".72">
+                                    <ellipse cx="240" cy="153" rx="165" ry="55" transform="rotate(-25 240 153)" stroke-width="2"/>
+                                    <ellipse cx="240" cy="153" rx="165" ry="55" transform="rotate(35 240 153)" stroke-width="2"/>
+                                    <circle cx="240" cy="153" r="61" stroke-width="2"/>
+                                    <path d="M240 38v230M125 153h230M158 71l164 164m0-164L158 235" stroke-opacity=".4"/>
+                                </g>
+                                <circle cx="79" cy="91" r="7" fill="#b4f4ff"/>
+                                <circle cx="361" cy="222" r="8" fill="#ffe7a0"/>
+                                <circle cx="336" cy="60" r="5" fill="#ffd1f4"/>
+                            </svg>
+                            <figcaption>Creative thinking, made tangible</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="career-values">
+                    <div class="section-header text-center">
+                        <span class="section-badge">How We Work</span>
+                        <h2 class="section-title">Good work starts with good collaboration</h2>
+                    </div>
+                    <div class="services-grid">
+                        <article class="service-card">
+                            <div class="feature-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
+                            <h3>Clear communication</h3>
+                            <p>We value open conversations, shared context, and working through challenges together.</p>
+                        </article>
+                        <article class="service-card">
+                            <div class="feature-icon"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></div>
+                            <h3>Thoughtful craft</h3>
+                            <p>We aim to make digital products useful, accessible, and carefully built.</p>
+                        </article>
+                        <article class="service-card">
+                            <div class="feature-icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></div>
+                            <h3>Continuous learning</h3>
+                            <p>We stay curious, learn from feedback, and keep improving how we work.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="open-positions" class="section-padding">
+            <div class="container">
+                <div class="career-openings">
+                    <span class="career-status"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> No current openings</span>
+                    <h2 class="section-title">We are not hiring for a specific role right now</h2>
+                    <p>We do not have any open positions to list at this time. If you would like us to consider your profile for future opportunities, send us a short introduction and a link to your portfolio or resume.</p>
+                    <a class="btn btn-primary" href="mailto:Sahbablu091@gmail.com?subject=Future%20career%20opportunities%20at%20ManjuTech">
+                        Get in touch <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html#home" class="brand-logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 50 250 L 50 50 L 120 50 L 175 160 L 230 50 L 300 50 L 300 250 L 240 250 L 240 120 L 190 220 L 160 220 L 110 120 L 110 250 Z" fill="url(#navLogoGrad)" />
+                            <path d="M 330 50 L 470 50 L 470 110 L 430 110 L 430 250 L 370 250 L 370 110 L 330 110 Z" fill="url(#navLogoGrad)" />
+                            <path d="M 120 170 Q 230 40 340 40 Q 250 120 150 170 Z" fill="url(#navLogoGrad)" />
+                            <path d="M 140 140 Q 260 20 380 20 Q 280 100 170 140 Z" fill="url(#navLogoGrad)" />
+                        </svg>
+                    </div>
+                    <span class="brand-name">Manju<span>Tech</span></span>
+                </a>
+                <p>Engineering premium web experiences with luxury design and modern architecture.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="enquiry.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="career.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+               <div class="social-links">
+    <!-- Existing social links (GitHub, LinkedIn, Twitter) -->
+    <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+
+    <!-- Clickable WhatsApp Icon -->
+    <a href="https://wa.me/9779767745929" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Clickable Email Icon -->
+    <a href="mailto:Sahbablu091@gmail.com" aria-label="Email Us">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+</div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>&copy; <span id="year"></span> ManjuTech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

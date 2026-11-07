@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Testimonials | ManjuTech Digital Studio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar-header" id="navbar">
+        <div class="container nav-container">
+           <a href="index.html#home" class="logo">
+    <img src="images/logo.png" alt="ManjuTech Logo" class="brand-logo">
+    <span class="brand-text">
+        <span class="brand-name">Manju<span>Tech</span></span>
+        <span class="brand-tagline">Digital Studio</span>
+    </span>
+</a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                   <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle">
+        Company <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+    </a>
+    
+    <!-- Mega Menu Popup Box -->
+    <div class="mega-menu">
+        <div class="mega-menu-header">COMPANY</div>
+        <div class="mega-menu-grid">
+            
+            <a href="about.html" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">About Us</span>
+                    <span class="item-desc">Who We Are</span>
+                </div>
+            </a>
+
+            <a href="team.html" class="mega-item">
+    <div class="icon-box"><i class="fa-solid fa-user-group"></i></div>
+    <div class="item-text">
+        <span class="item-title">Our Team</span>
+        <span class="item-desc">Designers. Thinkers. Makers.</span>
+    </div>
+</a>
+
+            <a href="technology.html#technology-title" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">Technology Stacks</span>
+                    <span class="item-desc">Tools We Use</span>
+                </div>
+            </a>
+
+            <a href="testimonial.html#testimonials-title" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-comment-dots"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">Testimonials</span>
+                    <span class="item-desc">Client Feedback</span>
+                </div>
+            </a>
+
+            <a href="career.html" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">Careers</span>
+                    <span class="item-desc">Join Our Team</span>
+                </div>
+            </a>
+
+            <a href="faq.html" class="mega-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-circle-question"></i>
+                </div>
+                <div class="item-text">
+                    <span class="item-title">FAQs</span>
+                    <span class="item-desc">Answers Simplified</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</li>
+                   <li class="nav-item dropdown services-dropdown">
+    <a href="enquiry.html" class="nav-link dropdown-toggle">
+        Services <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+    </a>
+    
+    <!-- 2-Panel Mega Menu Container -->
+    <div class="mega-menu services-mega-menu">
+        
+        <!-- Left Panel: Main Categories -->
+        <div class="services-left-panel">
+            <div class="mega-menu-header">SERVICES</div>
+            
+            <div class="service-cat-item active" data-target="panel-web">
+                <div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="item-text">
+                    <span class="item-title">Web Development</span>
+                    <span class="item-desc">Scalable & High Performance</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-uiux">
+                <div class="icon-box"><i class="fa-solid fa-pen-nib"></i></div>
+                <div class="item-text">
+                    <span class="item-title">Web Design and UI/UX</span>
+                    <span class="item-desc">Conversion optimized websites</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-software">
+                <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+                <div class="item-text">
+                    <span class="item-title">Software Development</span>
+                    <span class="item-desc">Custom Application for business</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-marketing">
+                <div class="icon-box"><i class="fa-solid fa-bullhorn"></i></div>
+                <div class="item-text">
+                    <span class="item-title">SEO and Digital Marketing</span>
+                    <span class="item-desc">Traffic-driven market solution</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="service-cat-item" data-target="panel-ai">
+                <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+                <div class="item-text">
+                    <span class="item-title">AI Integration & Systems</span>
+                    <span class="item-desc">Smart Automation and AI Tools</span>
+                </div>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </div>
+
+        </div>
+
+        <!-- Right Panel: Sub-services -->
+        <div class="services-right-panel">
+            
+            <!-- Web Development Sub-links -->
+            <div id="panel-web" class="sub-panel active">
+                <div class="mega-menu-header">WEB DEVELOPMENT</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=fullstack" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Full-Stack Web Development</a>
+                    <a href="enquiry.html?service=wordpress" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> WordPress Web Development</a>
+                    <a href="enquiry.html?service=ecommerce" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Custom E-commerce Development</a>
+                    <a href="enquiry.html?service=woocommerce" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> WooCommerce Development</a>
+                    <a href="enquiry.html?service=api" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> API Development & Integration</a>
+                    <a href="enquiry.html?service=legacy" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Legacy System Modernization</a>
+                </div>
+            </div>
+
+            <!-- UI/UX Sub-links -->
+            <div id="panel-uiux" class="sub-panel">
+                <div class="mega-menu-header">WEB DESIGN AND UI/UX</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=wireframing" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Wireframing & User Research</a>
+                    <a href="enquiry.html?service=landing" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> High-Converting Landing Pages</a>
+                    <a href="enquiry.html?service=designsystem" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Design Systems & UI Kits</a>
+                </div>
+            </div>
+
+            <!-- Software Sub-links -->
+            <div id="panel-software" class="sub-panel">
+                <div class="mega-menu-header">SOFTWARE DEVELOPMENT</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=saas" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> SaaS Product Engineering</a>
+                    <a href="enquiry.html?service=mobile" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Cross-Platform Mobile Apps</a>
+                    <a href="enquiry.html?service=enterprise" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Enterprise Software Solutions</a>
+                </div>
+            </div>
+
+            <!-- Marketing Sub-links -->
+            <div id="panel-marketing" class="sub-panel">
+                <div class="mega-menu-header">SEO & DIGITAL MARKETING</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=seo" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Technical & On-Page SEO</a>
+                    <a href="enquiry.html?service=ppc" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> PPC & Paid Advertising</a>
+                    <a href="enquiry.html?service=social" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Social Media Growth Campaigns</a>
+                </div>
+            </div>
+
+            <!-- AI Sub-links -->
+            <div id="panel-ai" class="sub-panel">
+                <div class="mega-menu-header">AI INTEGRATION</div>
+                <div class="sub-links-list">
+                    <a href="enquiry.html?service=chatbot" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Custom AI Chatbots & Agents</a>
+                    <a href="enquiry.html?service=automation" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> Workflow Automation</a>
+                    <a href="enquiry.html?service=llm" class="sub-link"><i class="fa-solid fa-arrow-trend-up"></i> LLM Fine-Tuning & Integration</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                   <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="enquiry.html" class="btn btn-primary nav-btn">Enquiry Now</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-padding" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="testimonial-hero">
+                    <div class="testimonial-hero-copy">
+                        <span class="section-badge">Client Feedback</span>
+                        <h1 class="section-title" id="testimonials-title">Good work is built together</h1>
+                        <p class="section-subtitle">Every project is a collaboration. We value the ideas, feedback, and trust clients bring to the work.</p>
+                        <a href="contact.html" class="btn btn-primary">Start a conversation</a>
+                    </div>
+                    <div class="testimonial-art">
+                        <svg viewBox="0 0 600 420" role="img" aria-labelledby="testimonial-art-title" preserveAspectRatio="xMidYMid slice">
+                            <title id="testimonial-art-title">Abstract illustration of a conversation and shared feedback</title>
+                            <defs>
+                                <linearGradient id="testimonial-bg" x1="0" y1="0" x2="1" y2="1">
+                                    <stop stop-color="#10264f"/>
+                                    <stop offset=".58" stop-color="#28527d"/>
+                                    <stop offset="1" stop-color="#754881"/>
+                                </linearGradient>
+                                <linearGradient id="testimonial-bubble" x1="0" y1="0" x2="1" y2="1">
+                                    <stop stop-color="#fff"/>
+                                    <stop offset="1" stop-color="#dff8ff"/>
+                                </linearGradient>
+                                <filter id="testimonial-shadow" x="-.2" y="-.2" width="1.5" height="1.6">
+                                    <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#080d28" flood-opacity=".3"/>
+                                </filter>
+                            </defs>
+                            <rect width="600" height="420" fill="url(#testimonial-bg)"/>
+                            <circle cx="465" cy="85" r="115" fill="#87eaff" opacity=".12"/>
+                            <circle cx="110" cy="340" r="100" fill="#ffc2ef" opacity=".1"/>
+                            <path d="M66 110c65-57 118-52 165 4m126 190c61 42 110 33 166-17" fill="none" stroke="#dcfaff" stroke-opacity=".45" stroke-width="2" stroke-dasharray="6 9"/>
+                            <g filter="url(#testimonial-shadow)">
+                                <rect x="76" y="87" width="270" height="118" rx="24" fill="url(#testimonial-bubble)"/>
+                                <path d="m105 202-12 30 43-27" fill="#eaf9ff"/>
+                                <circle cx="112" cy="122" r="12" fill="#4778d0"/>
+                                <path d="M108 122h8m-4-4v8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                                <rect x="137" y="116" width="164" height="8" rx="4" fill="#3b4e78"/>
+                                <rect x="103" y="151" width="204" height="6" rx="3" fill="#c5cee0"/>
+                                <rect x="103" y="168" width="156" height="6" rx="3" fill="#d8dfeb"/>
+                                <rect x="254" y="217" width="270" height="128" rx="24" fill="#a5f1d8"/>
+                                <path d="m490 341 17 30-42-26" fill="#a5f1d8"/>
+                                <circle cx="289" cy="253" r="12" fill="#fff" opacity=".95"/>
+                                <path d="m284 253 4 4 7-8" fill="none" stroke="#19957e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <rect x="313" y="247" width="175" height="8" rx="4" fill="#226b68"/>
+                                <rect x="284" y="283" width="204" height="6" rx="3" fill="#398a7e" opacity=".72"/>
+                                <rect x="284" y="301" width="161" height="6" rx="3" fill="#398a7e" opacity=".52"/>
+                            </g>
+                            <circle cx="440" cy="106" r="7" fill="#fff" opacity=".8"/>
+                            <circle cx="70" cy="286" r="5" fill="#b4f4ff"/>
+                            <circle cx="528" cy="173" r="5" fill="#ffd1f4"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="testimonial-section-title">
+                    <span class="section-badge">Our Commitment</span>
+                    <h2 class="section-title">Honest feedback, shared with permission</h2>
+                    <p class="section-subtitle">We want this page to reflect real client experiences. We are preparing approved feedback to share here.</p>
+                </div>
+
+                <div class="testimonial-promise">
+                    <div class="testimonial-promise-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
+                    <h2>Client stories are coming soon</h2>
+                    <p>We don't publish invented reviews or ratings. Once clients have approved their comments for publication, their feedback will appear here with the appropriate attribution.</p>
+                    <a href="contact.html" class="btn btn-primary">Talk with our team</a>
+                </div>
+
+                <div class="feedback-topics" aria-label="Topics clients may choose to share feedback about">
+                    <article class="service-card feedback-topic">
+                        <div class="feature-icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
+                        <h3>Collaboration</h3>
+                        <p>How communication, planning, and working together felt throughout the project.</p>
+                    </article>
+                    <article class="service-card feedback-topic">
+                        <div class="feature-icon"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></div>
+                        <h3>Project experience</h3>
+                        <p>What it was like turning an idea or requirement into a digital solution.</p>
+                    </article>
+                    <article class="service-card feedback-topic">
+                        <div class="feature-icon"><i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i></div>
+                        <h3>Outcomes</h3>
+                        <p>What the delivered work helps the client do, described in their own words.</p>
+                    </article>
+                </div>
+
+                <div class="testimonial-cta">
+                    <h2 class="section-title">Have a project in mind?</h2>
+                    <p>Tell us what you are looking to create, and let's explore how we can work together.</p>
+                    <a href="enquiry.html" class="btn btn-primary">Send an Enquiry</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html#home" class="brand-logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 50 250 L 50 50 L 120 50 L 175 160 L 230 50 L 300 50 L 300 250 L 240 250 L 240 120 L 190 220 L 160 220 L 110 120 L 110 250 Z" fill="url(#navLogoGrad)" />
+                            <path d="M 330 50 L 470 50 L 470 110 L 430 110 L 430 250 L 370 250 L 370 110 L 330 110 Z" fill="url(#navLogoGrad)" />
+                            <path d="M 120 170 Q 230 40 340 40 Q 250 120 150 170 Z" fill="url(#navLogoGrad)" />
+                            <path d="M 140 140 Q 260 20 380 20 Q 280 100 170 140 Z" fill="url(#navLogoGrad)" />
+                        </svg>
+                    </div>
+                    <span class="brand-name">Manju<span>Tech</span></span>
+                </a>
+                <p>Engineering premium web experiences with luxury design and modern architecture.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="enquiry.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="career.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+               <div class="social-links">
+    <!-- Existing social links (GitHub, LinkedIn, Twitter) -->
+    <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+
+    <!-- Clickable WhatsApp Icon -->
+    <a href="https://wa.me/9779767745929" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Clickable Email Icon -->
+    <a href="mailto:Sahbablu091@gmail.com" aria-label="Email Us">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+</div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>&copy; <span id="year"></span> ManjuTech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
